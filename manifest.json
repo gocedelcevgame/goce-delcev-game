@@ -1,10 +1,10 @@
 {
   "name": "Патот на Слободата — Гоце Делчев",
   "short_name": "Гоце Делчев",
-  "description": "Семејно безбедна образовна игра за Гоце Делчев, знаење, културен натпревар и достоинство.",
+  "description": "Образовна авантура за деца, знаење и културен натпревар.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0a0c15",
+  "background_color": "#070914",
   "theme_color": "#d4af37",
   "orientation": "any",
   "lang": "mk",

@@ -1,42 +1,36 @@
 # Патот на Слободата — Гоце Делчев
 
-Семејно безбедна, образовна авантуристичка игра инспирирана од животот, мислата и вредностите на Гоце Делчев.
+Образовна, семејно безбедна browser/PWA игра за деца и семејства.
 
-Дел од: **Macedonian Heroes Educational Gaming Universe** и **WPA Educational Gaming Ecosystem**.
+## v2 Working Update
 
-## Главна порака
+Оваа верзија има:
+- вистински game loop
+- движење лево/десно
+- скок и двоен скок
+- препреки, ѕвезди, свитоци и метеори
+- collision detection
+- цел за секое ниво
+- 37 нивоа од JSON
+- дневна мисија
+- помошници: Даме, Јане, Ѓорче, Пере
+- мобилни копчиња
+- PWA manifest
+- GitHub Pages ready
 
-> „Јас го разбирам светот како поле за културен натпревар меѓу народите.“
+## Како да се качи
 
-Играта не отвора политички спорови. Таа ја претставува оваа мисла како универзална образовна порака за знаење, достоинство, културен натпревар, храброст, истрајност и личен развој.
+Качи ги сите фајлови во root на repo-то:
 
-## Карактеристики
+`gocedelcevgame/goce-delcev-game`
 
-- 37 образовни нивоа
-- Македонски интерфејс
-- Семејно безбеден дизајн
-- Без насилство како главен концепт
-- AI-поддржани образовни помошници
-- Мисии, квизови, свитоци на знаење и награди
-- PWA-ready структура
-- Работи на mobile, tablet, laptop и desktop browser
-- Подготвено за GitHub Pages
+Потоа вклучи GitHub Pages:
+Settings → Pages → Deploy from branch → main / root
 
-## GitHub Pages
-
-По upload на овој пакет во repo root, активирај:
-
-Settings → Pages → Deploy from branch → main → root
-
-Потоа играта ќе биде достапна на:
-
-https://gocedelcevgame.github.io/goce-delcev-game/
+Live URL:
+`https://gocedelcevgame.github.io/goce-delcev-game/`
 
 ## Авторска насока
 
-Dr. Sande Smiljanov  
-WPA Institute – Macedonia
-
-## Контакт
-
-gocedelcevgame@gmail.com
+WPA Institute – Macedonia  
+Dr. Sande Smiljanov

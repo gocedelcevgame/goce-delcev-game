@@ -2,482 +2,630 @@
   {
     "id": 1,
     "title": "Кукуш — почеток на патот",
-    "objective": "Запознај го родното место, семејството и првите вредности.",
-    "historicalFact": "Кукуш бил важна македонска средина во која се развивале просвета и културен дух.",
-    "reward": {
-      "wisdom": 11,
-      "stars": 1,
-      "coins": 6
-    },
+    "objective": "Запознај го родното место и собери 3 свитоци.",
+    "historicalFact": "Кукуш бил важна средина за просвета, култура и македонски дух.",
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 3,
+    "targetStars": 4,
+    "speed": 1.34,
+    "obstacleRate": 0.0192,
+    "reward": {
+      "wisdom": 16,
+      "coins": 9,
+      "stars": 1
+    }
   },
   {
     "id": 2,
     "title": "Училиштето и љубовта кон знаењето",
-    "objective": "Собери 3 книги и отклучи прва мудрост.",
+    "objective": "Собери книги и отклучи прва мудрост.",
     "historicalFact": "Гоце рано покажал љубов кон учење, книги и правичност.",
-    "reward": {
-      "wisdom": 12,
-      "stars": 1,
-      "coins": 7
-    },
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 4,
+    "targetStars": 5,
+    "speed": 1.39,
+    "obstacleRate": 0.020399999999999998,
+    "reward": {
+      "wisdom": 17,
+      "coins": 10,
+      "stars": 1
+    }
   },
   {
     "id": 3,
     "title": "Солун — град на идеи",
-    "objective": "Пронајди ги светилниците на знаењето.",
+    "objective": "Помини низ градските светилки на знаењето.",
     "historicalFact": "Солун бил важен образовен и културен центар за македонската младина.",
-    "reward": {
-      "wisdom": 13,
-      "stars": 2,
-      "coins": 8
-    },
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 5,
+    "targetStars": 6,
+    "speed": 1.44,
+    "obstacleRate": 0.021599999999999998,
+    "reward": {
+      "wisdom": 18,
+      "coins": 11,
+      "stars": 1
+    }
   },
   {
     "id": 4,
     "title": "Културен натпревар",
-    "objective": "Одговори на прашање за познатата мисла на Гоце.",
+    "objective": "Собери 5 ѕвезди и одговори на мудрост.",
     "historicalFact": "„Јас го разбирам светот како поле за културен натпревар меѓу народите.“",
-    "reward": {
-      "wisdom": 14,
-      "stars": 1,
-      "coins": 9
-    },
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 2,
+    "targetStars": 7,
+    "speed": 1.48,
+    "obstacleRate": 0.022799999999999997,
+    "reward": {
+      "wisdom": 19,
+      "coins": 12,
+      "stars": 1
+    }
   },
   {
     "id": 5,
     "title": "Труд и постојанство",
-    "objective": "Издржи 60 секунди и собери мудрост.",
-    "historicalFact": "Гоце ја истакнувал важноста на трудот и постојанството.",
-    "reward": {
-      "wisdom": 15,
-      "stars": 1,
-      "coins": 10
-    },
+    "objective": "Избегни препреки и собери мудрост.",
+    "historicalFact": "Трудот и постојанството се темел на секој голем потфат.",
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 3,
+    "targetStars": 3,
+    "speed": 1.52,
+    "obstacleRate": 0.023999999999999997,
+    "reward": {
+      "wisdom": 20,
+      "coins": 13,
+      "stars": 2
+    }
   },
   {
     "id": 6,
     "title": "Учителска мисија",
-    "objective": "Помогни на учениците да стигнат до училницата.",
+    "objective": "Достави знаење до училницата.",
     "historicalFact": "Гоце бил учител и верувал во просветување на народот.",
-    "reward": {
-      "wisdom": 16,
-      "stars": 2,
-      "coins": 11
-    },
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 4,
+    "targetStars": 4,
+    "speed": 1.57,
+    "obstacleRate": 0.0252,
+    "reward": {
+      "wisdom": 21,
+      "coins": 14,
+      "stars": 1
+    }
   },
   {
     "id": 7,
     "title": "Штип — работа со народот",
-    "objective": "Пронајди ги трите симболи на доверба.",
+    "objective": "Поврзи 4 точки на доверба.",
     "historicalFact": "Штип бил значајно место во неговата учителска и организациска дејност.",
-    "reward": {
-      "wisdom": 17,
-      "stars": 1,
-      "coins": 12
-    },
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 5,
+    "targetStars": 5,
+    "speed": 1.61,
+    "obstacleRate": 0.0264,
+    "reward": {
+      "wisdom": 22,
+      "coins": 15,
+      "stars": 1
+    }
   },
   {
     "id": 8,
     "title": "Внатрешна сила",
-    "objective": "Заштити го пламенот на духот од темнината.",
-    "historicalFact": "Гоце сметал дека прво треба да се разбие ропскиот дух.",
-    "reward": {
-      "wisdom": 18,
-      "stars": 1,
-      "coins": 13
-    },
+    "objective": "Осветли ја темнината со факти.",
+    "historicalFact": "Гоце сметал дека треба да се разбуди духот и самодовербата.",
+    "free": true,
     "difficulty": "лесно",
-    "free": true
+    "targetScrolls": 2,
+    "targetStars": 6,
+    "speed": 1.66,
+    "obstacleRate": 0.0276,
+    "reward": {
+      "wisdom": 23,
+      "coins": 16,
+      "stars": 1
+    }
   },
   {
     "id": 9,
     "title": "Даме Груев — другарство и доверба",
-    "objective": "Сретни го првиот камарад и отклучи совет.",
+    "objective": "Отклучи го советот на Даме.",
     "historicalFact": "Даме Груев бил еден од најзначајните македонски револуционерни дејци.",
-    "reward": {
-      "wisdom": 19,
-      "stars": 2,
-      "coins": 14
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 7,
+    "speed": 1.71,
+    "obstacleRate": 0.0288,
+    "reward": {
+      "wisdom": 24,
+      "coins": 17,
+      "stars": 1
+    }
   },
   {
     "id": 10,
     "title": "Мрежа на доверба",
-    "objective": "Поврзи 5 точки на картата.",
-    "historicalFact": "Организациската работа барала доверба, ред и дисциплина.",
-    "reward": {
-      "wisdom": 20,
-      "stars": 1,
-      "coins": 15
-    },
+    "objective": "Премини преку мостови и избегни дупки.",
+    "historicalFact": "Организациската работа бара доверба, ред и дисциплина.",
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 3,
+    "speed": 1.75,
+    "obstacleRate": 0.03,
+    "reward": {
+      "wisdom": 25,
+      "coins": 18,
+      "stars": 2
+    }
   },
   {
     "id": 11,
     "title": "Патишта и канали",
-    "objective": "Избегни препреки и пренеси писмо.",
-    "historicalFact": "Каналите и тајната пошта биле важни за движењето.",
-    "reward": {
-      "wisdom": 21,
-      "stars": 1,
-      "coins": 16
-    },
+    "objective": "Пренеси писмо преку безбеден пат.",
+    "historicalFact": "Каналите и тајната пошта биле важни за комуникација.",
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 4,
+    "speed": 1.79,
+    "obstacleRate": 0.0312,
+    "reward": {
+      "wisdom": 26,
+      "coins": 19,
+      "stars": 1
+    }
   },
   {
     "id": 12,
     "title": "Банско и Пирин",
     "objective": "Собери планински ѕвезди.",
     "historicalFact": "Гоце дејствувал и во Разлошко и Пиринскиот крај.",
-    "reward": {
-      "wisdom": 22,
-      "stars": 2,
-      "coins": 17
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 5,
+    "speed": 1.84,
+    "obstacleRate": 0.0324,
+    "reward": {
+      "wisdom": 27,
+      "coins": 20,
+      "stars": 1
+    }
   },
   {
     "id": 13,
     "title": "Разговор со народот",
-    "objective": "Одбери мирно решение во спор.",
-    "historicalFact": "Во мисиите се нагласува правичност, не омраза.",
-    "reward": {
-      "wisdom": 23,
-      "stars": 1,
-      "coins": 18
-    },
+    "objective": "Избери мирно решение во спор.",
+    "historicalFact": "Во играта се нагласува правичност, не омраза.",
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 6,
+    "speed": 1.89,
+    "obstacleRate": 0.0336,
+    "reward": {
+      "wisdom": 28,
+      "coins": 21,
+      "stars": 1
+    }
   },
   {
     "id": 14,
     "title": "Жените во делото",
     "objective": "Отклучи мисија за храбрите учителки.",
     "historicalFact": "Во македонското движење учествувале и жени, учителки и поддржувачки.",
-    "reward": {
-      "wisdom": 24,
-      "stars": 1,
-      "coins": 19
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 7,
+    "speed": 1.93,
+    "obstacleRate": 0.0348,
+    "reward": {
+      "wisdom": 29,
+      "coins": 22,
+      "stars": 1
+    }
   },
   {
     "id": 15,
     "title": "Јане Сандански — планинска стратегија",
-    "objective": "Отклучи супер скок со помош на Јане.",
+    "objective": "Користи супер скок за планински препреки.",
     "historicalFact": "Јане Сандански бил истакнат војвода и организатор.",
-    "reward": {
-      "wisdom": 25,
-      "stars": 2,
-      "coins": 20
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 3,
+    "speed": 1.98,
+    "obstacleRate": 0.036,
+    "reward": {
+      "wisdom": 30,
+      "coins": 23,
+      "stars": 2
+    }
   },
   {
     "id": 16,
     "title": "Ѓорче Петров — мудрост на зборот",
-    "objective": "Одговори на логичко прашање.",
+    "objective": "Реши логичка задача.",
     "historicalFact": "Ѓорче Петров бил идеолог и организатор.",
-    "reward": {
-      "wisdom": 26,
-      "stars": 1,
-      "coins": 21
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 4,
+    "speed": 2.02,
+    "obstacleRate": 0.0372,
+    "reward": {
+      "wisdom": 31,
+      "coins": 24,
+      "stars": 1
+    }
   },
   {
     "id": 17,
     "title": "Пере Тошев — трпение и ред",
-    "objective": "Изгради мост од 4 правилни одлуки.",
+    "objective": "Премини тивко и без грешка.",
     "historicalFact": "Пере Тошев бил значаен македонски револуционер.",
-    "reward": {
-      "wisdom": 27,
-      "stars": 1,
-      "coins": 22
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 5,
+    "speed": 2.06,
+    "obstacleRate": 0.0384,
+    "reward": {
+      "wisdom": 32,
+      "coins": 25,
+      "stars": 1
+    }
   },
   {
     "id": 18,
     "title": "Народна школа",
-    "objective": "Собери 5 свитоци со факти.",
+    "objective": "Собери 6 свитоци со факти.",
     "historicalFact": "Просветата била клучна за будење на народот.",
-    "reward": {
-      "wisdom": 28,
-      "stars": 2,
-      "coins": 23
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 6,
+    "speed": 2.11,
+    "obstacleRate": 0.039599999999999996,
+    "reward": {
+      "wisdom": 33,
+      "coins": 26,
+      "stars": 1
+    }
   },
   {
     "id": 19,
     "title": "Слобода како одговорност",
-    "objective": "Избери одговор без омраза.",
-    "historicalFact": "Слободата во играта се претставува како достоинство и одговорност.",
-    "reward": {
-      "wisdom": 29,
-      "stars": 1,
-      "coins": 24
-    },
+    "objective": "Избери чесна одлука.",
+    "historicalFact": "Слободата се претставува како достоинство и одговорност.",
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 7,
+    "speed": 2.16,
+    "obstacleRate": 0.040799999999999996,
+    "reward": {
+      "wisdom": 34,
+      "coins": 27,
+      "stars": 1
+    }
   },
   {
     "id": 20,
     "title": "Културен мост",
     "objective": "Спои симболи од различни култури.",
     "historicalFact": "Културниот натпревар значи знаење, создавање и почит.",
-    "reward": {
-      "wisdom": 30,
-      "stars": 1,
-      "coins": 25
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 3,
+    "speed": 2.2,
+    "obstacleRate": 0.041999999999999996,
+    "reward": {
+      "wisdom": 35,
+      "coins": 28,
+      "stars": 2
+    }
   },
   {
     "id": 21,
     "title": "Планинска патека",
-    "objective": "Прескокни дупки со двоен скок.",
-    "historicalFact": "Играта ја користи историјата како инспирација за активна авантура.",
-    "reward": {
-      "wisdom": 31,
-      "stars": 2,
-      "coins": 26
-    },
+    "objective": "Прескокни големи дупки со двоен скок.",
+    "historicalFact": "Историјата служи како инспирација за активна авантура.",
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 4,
+    "speed": 2.25,
+    "obstacleRate": 0.043199999999999995,
+    "reward": {
+      "wisdom": 36,
+      "coins": 29,
+      "stars": 1
+    }
   },
   {
     "id": 22,
     "title": "Ноќ на светилки",
     "objective": "Осветли ја темнината со факти.",
     "historicalFact": "Знаењето ја победува темнината.",
-    "reward": {
-      "wisdom": 32,
-      "stars": 1,
-      "coins": 27
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 5,
+    "speed": 2.29,
+    "obstacleRate": 0.044399999999999995,
+    "reward": {
+      "wisdom": 37,
+      "coins": 30,
+      "stars": 1
+    }
   },
   {
     "id": 23,
     "title": "Мисија на курирот",
-    "objective": "Достави порака без да изгубиш мудрост.",
+    "objective": "Достави порака без судир.",
     "historicalFact": "Курирската служба била важна за комуникација.",
-    "reward": {
-      "wisdom": 33,
-      "stars": 1,
-      "coins": 28
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 6,
+    "speed": 2.33,
+    "obstacleRate": 0.045599999999999995,
+    "reward": {
+      "wisdom": 38,
+      "coins": 31,
+      "stars": 1
+    }
   },
   {
     "id": 24,
     "title": "Совет на камаради",
     "objective": "Побарај помош од придружник.",
-    "historicalFact": "Помошниците во играта даваат визуелни и звучни насоки.",
-    "reward": {
-      "wisdom": 34,
-      "stars": 2,
-      "coins": 29
-    },
+    "historicalFact": "Помошниците даваат визуелни и звучни насоки.",
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 7,
+    "speed": 2.38,
+    "obstacleRate": 0.046799999999999994,
+    "reward": {
+      "wisdom": 39,
+      "coins": 32,
+      "stars": 1
+    }
   },
   {
     "id": 25,
     "title": "Мапа на идеали",
     "objective": "Отклучи нов регион.",
     "historicalFact": "Играта избегнува политички спорови и се фокусира на вредности.",
-    "reward": {
-      "wisdom": 35,
-      "stars": 1,
-      "coins": 30
-    },
+    "free": false,
     "difficulty": "средно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 3,
+    "speed": 2.42,
+    "obstacleRate": 0.048,
+    "reward": {
+      "wisdom": 40,
+      "coins": 33,
+      "stars": 2
+    }
   },
   {
     "id": 26,
     "title": "Труд и истрајност II",
-    "objective": "Заврши мисија без грешка.",
+    "objective": "Заврши мисија без загубена енергија.",
     "historicalFact": "Трудот и постојанството се пат до успех.",
-    "reward": {
-      "wisdom": 36,
-      "stars": 1,
-      "coins": 31
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 4,
+    "speed": 2.47,
+    "obstacleRate": 0.049199999999999994,
+    "reward": {
+      "wisdom": 41,
+      "coins": 34,
+      "stars": 1
+    }
   },
   {
     "id": 27,
     "title": "Достоинство",
     "objective": "Одбери чесна одлука во дијалог.",
     "historicalFact": "Достоинството е дел од херојската порака.",
-    "reward": {
-      "wisdom": 37,
-      "stars": 2,
-      "coins": 32
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 5,
+    "speed": 2.51,
+    "obstacleRate": 0.0504,
+    "reward": {
+      "wisdom": 42,
+      "coins": 35,
+      "stars": 1
+    }
   },
   {
     "id": 28,
     "title": "Мост кон иднината",
     "objective": "Собери 7 ѕвезди.",
     "historicalFact": "Историјата треба да ги инспирира децата за иднината.",
-    "reward": {
-      "wisdom": 38,
-      "stars": 1,
-      "coins": 33
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 6,
+    "speed": 2.56,
+    "obstacleRate": 0.05159999999999999,
+    "reward": {
+      "wisdom": 43,
+      "coins": 36,
+      "stars": 1
+    }
   },
   {
     "id": 29,
     "title": "Семејна мисија",
     "objective": "Активирај family-safe порака.",
     "historicalFact": "Играта е наменета за деца и семејства.",
-    "reward": {
-      "wisdom": 39,
-      "stars": 1,
-      "coins": 34
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 7,
+    "speed": 2.6,
+    "obstacleRate": 0.0528,
+    "reward": {
+      "wisdom": 44,
+      "coins": 37,
+      "stars": 1
+    }
   },
   {
     "id": 30,
     "title": "Квиз на мудроста",
     "objective": "Одговори на 3 прашања.",
     "historicalFact": "Квизовите ја зголемуваат образовната вредност.",
-    "reward": {
-      "wisdom": 40,
-      "stars": 2,
-      "coins": 35
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 3,
+    "speed": 2.65,
+    "obstacleRate": 0.05399999999999999,
+    "reward": {
+      "wisdom": 45,
+      "coins": 38,
+      "stars": 2
+    }
   },
   {
     "id": 31,
     "title": "Гласот на учителот",
     "objective": "Слушни совет и избери насока.",
     "historicalFact": "Учителската улога на Гоце е важна за играта.",
-    "reward": {
-      "wisdom": 41,
-      "stars": 1,
-      "coins": 36
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 4,
+    "speed": 2.7,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 46,
+      "coins": 39,
+      "stars": 1
+    }
   },
   {
     "id": 32,
     "title": "Светилник на народите",
     "objective": "Неутрализирај темен облак со културна порака.",
     "historicalFact": "Културниот натпревар е позитивна и универзална тема.",
-    "reward": {
-      "wisdom": 42,
-      "stars": 1,
-      "coins": 37
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 5,
+    "speed": 2.74,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 47,
+      "coins": 40,
+      "stars": 1
+    }
   },
   {
     "id": 33,
     "title": "Патот кон Баница",
     "objective": "Остани храбар и смирен.",
     "historicalFact": "Последните денови се претставуваат достоинствено и ненасилно.",
-    "reward": {
-      "wisdom": 43,
-      "stars": 2,
-      "coins": 38
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 6,
+    "speed": 2.79,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 48,
+      "coins": 41,
+      "stars": 1
+    }
   },
   {
     "id": 34,
     "title": "Светлина над Македонија",
     "objective": "Собери 10 светлини.",
-    "historicalFact": "Пораката е знаење, слобода, култура и човечност.",
-    "reward": {
-      "wisdom": 44,
-      "stars": 1,
-      "coins": 39
-    },
+    "historicalFact": "Пораката е знаење, култура и човечност.",
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 4,
+    "targetStars": 7,
+    "speed": 2.83,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 49,
+      "coins": 42,
+      "stars": 1
+    }
   },
   {
     "id": 35,
     "title": "Културен натпревар на народите",
     "objective": "Повтори ја водечката мисла.",
     "historicalFact": "Ова е главната водилка на целата игра.",
-    "reward": {
-      "wisdom": 45,
-      "stars": 1,
-      "coins": 40
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 5,
+    "targetStars": 3,
+    "speed": 2.88,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 50,
+      "coins": 43,
+      "stars": 2
+    }
   },
   {
     "id": 36,
     "title": "Завршна мисија — Утринска зора",
     "objective": "Отклучи среќен крај.",
     "historicalFact": "„Ќе удри утринската зора и за нас...“",
-    "reward": {
-      "wisdom": 46,
-      "stars": 2,
-      "coins": 41
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 2,
+    "targetStars": 4,
+    "speed": 2.92,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 51,
+      "coins": 44,
+      "stars": 1
+    }
   },
   {
     "id": 37,
     "title": "Пантеон на мудроста",
     "objective": "Отклучи финален свиток.",
     "historicalFact": "Финалето ги слави учењето, мирот, трудот и достоинството.",
-    "reward": {
-      "wisdom": 47,
-      "stars": 1,
-      "coins": 42
-    },
+    "free": false,
     "difficulty": "напредно",
-    "free": false
+    "targetScrolls": 3,
+    "targetStars": 5,
+    "speed": 2.96,
+    "obstacleRate": 0.055,
+    "reward": {
+      "wisdom": 52,
+      "coins": 45,
+      "stars": 1
+    }
   }
 ]

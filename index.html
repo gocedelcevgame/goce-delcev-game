@@ -1,1 +1,122 @@
-<!DOCTYPE html><html lang="mk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Патот на Слободата — Гоце Делчев</title><meta name="description" content="Семејно безбедна образовна игра за Гоце Делчев, културен натпревар, знаење и достоинство."><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"></head><body><div class="app-shell"><header class="topbar"><div class="brand"><div class="logo">ГД</div><div><h1>Патот на Слободата</h1><p>Гоце Делчев · Образовна авантура · 37 нивоа</p></div></div><div class="player-box"><span>Играч: <strong id="playerName">Гостин</strong></span><input id="playerNameInput" placeholder="Напиши име"><button class="btn secondary" onclick="setPlayerName()">Зачувај</button></div></header><section class="hero"><div class="eyebrow">WPA Educational Gaming Universe</div><h2>Гоце Делчев</h2><p>Семејно безбедна игра за знаење, труд, достоинство и културен натпревар. Создадена за деца, семејства, дијаспора и сите што сакаат да учат преку авантура.</p><div class="quote">„Јас го разбирам светот како поле за културен натпревар меѓу народите.“</div><div class="controls" style="justify-content:center"><button class="btn" onclick="nextLevel()">▶ Започни / Заврши мисија</button><button class="btn secondary" onclick="openWisdom()">📜 Свиток на мудроста</button><button class="btn secondary" onclick="askQuiz()">❓ Прашање</button><button class="btn ghost" id="musicBtn" onclick="toggleMusic()">🔇 Музика исклучена</button></div></section><section class="stats"><div class="stat"><strong id="levelStat">1</strong><span>Ниво</span></div><div class="stat"><strong id="wisdomStat">0</strong><span>Мудрост</span></div><div class="stat"><strong id="coinsStat">0</strong><span>Монети</span></div><div class="stat"><strong id="starsStat">0</strong><span>Ѕвезди</span></div></section><main class="layout"><section class="card"><div class="hud"><div class="pill" id="premiumNote">8 бесплатни нивоа · потоа премиум</div><div class="pill">Mobile · Tablet · PC · PWA</div><div class="pill">Family-safe</div></div><div id="gameStage" class="game-stage" onclick="jump()"><div class="sky"></div><div class="mountains"></div><div class="ground"></div><div id="player" class="player" title="Гоце"></div></div><div class="controls"><button class="btn" onclick="jump()">⬆ Скок / двоен скок</button><button class="btn secondary" onclick="companionPower('jane')">⛰ Јане: супер скок</button><button class="btn secondary" onclick="companionPower('gjorce')">🧠 Ѓорче: совет</button></div><div class="fact-box"><h3 id="currentLevelTitle">Ниво</h3><p><strong>Мисија:</strong> <span id="currentObjective"></span></p><p><strong>Факт:</strong> <span id="currentFact"></span></p></div></section><aside class="card"><h3>🎯 Денешна мисија</h3><div class="mission">Заврши 1 ниво или одговори на прашање на мудроста.<br>Награда: +20 мудрост · +1 ѕвезда</div><h3 style="margin-top:18px">🤝 Камаради / помошници</h3><div class="companions"><div class="companion"><strong>Даме Груев</strong><br><small>Совет на доверба</small><br><button class="btn ghost" onclick="companionPower('dame')">Совет</button></div><div class="companion"><strong>Јане Сандански</strong><br><small>Планински скок</small><br><button class="btn ghost" onclick="companionPower('jane')">Активирај</button></div><div class="companion"><strong>Ѓорче Петров</strong><br><small>Стратегиска мудрост</small><br><button class="btn ghost" onclick="companionPower('gjorce')">Совет</button></div><div class="companion"><strong>Пере Тошев</strong><br><small>Истрајност</small><br><button class="btn ghost" onclick="companionPower('pere')">Совет</button></div></div><h3 style="margin-top:18px">🗺️ Нивоа</h3><div id="levelList" class="level-list"></div></aside></main><footer class="footer">🏛️ WPA Institute – Dr. Sande Smiljanov | Macedonia<br>Играта е образовна, ненасилна и семејно безбедна. Историјата се користи како инспирација за знаење и културна љубопитност.</footer></div><div id="modal" class="modal" onclick="closeModal()"><div class="modal-content" onclick="event.stopPropagation()"><div id="modalText"></div><div class="controls"><button class="btn" onclick="closeModal()">Затвори</button></div></div></div><div id="toast" class="modal"><div class="modal-content" style="max-width:420px;text-align:center"><p id="toastText"></p></div></div><script src="ai/ai-companions.js"></script><script src="ai/strategy-engine.js"></script><script src="ai/mentor-mode.js"></script><script src="game.js"></script></body></html>
+<!doctype html>
+<html lang="mk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Патот на Слободата — Гоце Делчев</title>
+  <meta name="description" content="Образовна авантура за Гоце Делчев, знаење, достоинство и културен натпревар.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">ГД</div>
+      <div>
+        <h1>Патот на Слободата</h1>
+        <div class="sub">Гоце Делчев · Образовна авантура · 37 нивоа · v2 Working</div>
+      </div>
+    </div>
+    <div class="player">
+      <span>Играч: <strong id="playerName">Гостин</strong></span>
+      <input id="nameInput" placeholder="Напиши име">
+      <button class="btn alt" onclick="setName()">Зачувај</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">WPA Educational Gaming Universe</div>
+    <h2>Гоце Делчев</h2>
+    <p>Семејно безбедна игра за знаење, труд, достоинство и културен натпревар. Сега со вистинско движење, препреки, ѕвезди, свитоци, метеори, помошници и напредок по ниво.</p>
+    <div class="quote">„Јас го разбирам светот како поле за културен натпревар меѓу народите.“</div>
+    <div class="controls" style="justify-content:center">
+      <button class="btn" onclick="startGame()">▶ Започни мисија</button>
+      <button class="btn alt" onclick="openWisdom()">📜 Свиток</button>
+      <button class="btn alt" onclick="openQuiz()">❓ Квиз</button>
+      <button class="btn dark" id="musicBtn" onclick="toggleMusic()">🔇 Музика исклучена</button>
+      <button class="btn dark" onclick="unlockPremiumDemo()">🔓 Отклучи демо нивоа</button>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><strong id="levelStat">1</strong><span>Ниво</span></div>
+    <div class="stat"><strong id="wisdomStat">0</strong><span>Мудрост</span></div>
+    <div class="stat"><strong id="coinStat">0</strong><span>Монети</span></div>
+    <div class="stat"><strong id="starStat">0</strong><span>Ѕвезди</span></div>
+    <div class="stat"><strong id="energyStat">3</strong><span>Енергија</span></div>
+  </section>
+
+  <main class="layout">
+    <section class="card">
+      <div class="hud">
+        <div class="pill" id="freePill">Бесплатно ниво</div>
+        <div class="pill">Контроли: ← → Space / мобилни копчиња</div>
+        <div class="pill">Family-safe</div>
+      </div>
+
+      <div id="stage" class="stage">
+        <div class="bg"></div>
+        <div class="mountains"></div>
+        <div class="ground"></div>
+        <div id="heroPlayer" class="hero-player"></div>
+      </div>
+
+      <div class="mobile-pad">
+        <button class="btn alt" onclick="moveLeft()">⬅ Лево</button>
+        <button class="btn" onclick="jump()">⬆ Скок</button>
+        <button class="btn alt" onclick="moveRight()">Десно ➡</button>
+        <button class="btn dark" onclick="useCompanion('dame')">🛡 Даме</button>
+        <button class="btn dark" onclick="useCompanion('jane')">⛰ Јане</button>
+        <button class="btn dark" onclick="useCompanion('gjorce')">🧠 Ѓорче</button>
+      </div>
+
+      <div class="info">
+        <h3 id="levelTitle">Ниво</h3>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p id="targetInfo">Цел:</p>
+        <p><strong>Мисија:</strong> <span id="objective"></span></p>
+        <p><strong>Факт:</strong> <span id="fact"></span></p>
+      </div>
+    </section>
+
+    <aside class="side-grid">
+      <section class="card">
+        <h3>🎯 Денешна мисија</h3>
+        <p>Заврши едно ниво или одговори на квиз. Награда: мудрост и ѕвезда.</p>
+      </section>
+
+      <section class="card">
+        <h3>🤝 Камаради / помошници</h3>
+        <div class="companions">
+          <div class="companion"><strong>Даме Груев</strong><div class="small">Штит на доверба</div><button class="btn dark" onclick="useCompanion('dame')">Активирај</button></div>
+          <div class="companion"><strong>Јане Сандански</strong><div class="small">Планински супер скок</div><button class="btn dark" onclick="useCompanion('jane')">Активирај</button></div>
+          <div class="companion"><strong>Ѓорче Петров</strong><div class="small">Забавување / стратегија</div><button class="btn dark" onclick="useCompanion('gjorce')">Активирај</button></div>
+          <div class="companion"><strong>Пере Тошев</strong><div class="small">Магнет на истрајност</div><button class="btn dark" onclick="useCompanion('pere')">Активирај</button></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>🗺️ Нивоа</h3>
+        <div id="levels" class="levels"></div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    🏛️ WPA Institute – Dr. Sande Smiljanov | Macedonia<br>
+    Образовно · ненасилно · семејно безбедно · културен натпревар, знаење и достоинство.
+  </footer>
+</div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <div class="modal-card" onclick="event.stopPropagation()">
+    <div id="modalBody"></div>
+    <button class="btn" onclick="closeModal()">Затвори</button>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+
+<script src="game.js"></script>
+</body>
+</html>
