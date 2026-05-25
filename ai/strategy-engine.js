@@ -1,0 +1,1 @@
+window.WPA_STRATEGY={scoreDecision(choice){const p=["знаење","мир","култура","достоинство","труд","пријателство"];return p.some(w=>String(choice).toLowerCase().includes(w))?10:3}};

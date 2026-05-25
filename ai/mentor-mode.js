@@ -1,0 +1,1 @@
+window.WPA_MENTOR={explain(level){return `Совет: ${level?.historicalFact||"Учиме преку игра, трпение и љубопитност."}`}};
