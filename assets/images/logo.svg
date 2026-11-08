@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><rect width="512" height="512" rx="96" fill="#070914"/><circle cx="256" cy="256" r="188" fill="none" stroke="#d4af37" stroke-width="18"/><text x="256" y="245" text-anchor="middle" font-family="Arial" font-size="58" font-weight="700" fill="#d4af37">ГД</text><text x="256" y="310" text-anchor="middle" font-family="Arial" font-size="28" fill="#f5d76e">Патот на Слободата</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="75%"><stop offset="0" stop-color="#1d2944"/><stop offset="1" stop-color="#070914"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dd7a"/><stop offset="1" stop-color="#b8892f"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="url(#gold)" stroke-width="14"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#d4af37" stroke-opacity=".35" stroke-width="3"/>
+  <text x="256" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" fill="url(#gold)">ГД</text>
+  <path d="M176 330 Q256 360 336 330" fill="none" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+</svg>

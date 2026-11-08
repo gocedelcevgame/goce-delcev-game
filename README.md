@@ -1,36 +1,35 @@
 # Патот на Слободата — Гоце Делчев
 
-Образовна, семејно безбедна browser/PWA игра за деца и семејства.
+**WPA Historical Adventures** — интерактивна историска образовна авантура за деца и семејства.
 
-## v2 Working Update
+- **Верзија:** v2.5.4 (8 ноември 2026) — тест-кандидат, не потврден live.
+- **37 нивоа** со играчки задачи, знаење и предизвици.
+- **Јазици:** MK, EN (англиската содржина е пилотска и потребна е редакциска проверка).
+- **Уреди:** компјутери, лаптопи, телефони и таблети преку прелистувач; опционална PWA.
+- **Дополнително:** локален напредок, сертификат за лична употреба, наставничка работна страна и мини-игра „Протокол на времето“.
+- **Музика:** вграден Suno AI soundtrack како наведено во MUSIC_PROVENANCE.md; комерцијално потекло под проверка.
+- **Плаќање:** НЕ е активирано; нема Stripe, PayPal, плаќање со картичка или платен пристап.
 
-Оваа верзија има:
-- вистински game loop
-- движење лево/десно
-- скок и двоен скок
-- препреки, ѕвезди, свитоци и метеори
-- collision detection
-- цел за секое ниво
-- 37 нивоа од JSON
-- дневна мисија
-- помошници: Даме, Јане, Ѓорче, Пере
-- мобилни копчиња
-- PWA manifest
-- GitHub Pages ready
+## Како да се отвори
 
-## Како да се качи
+Игра: `index.html` преку HTTPS веб-хостинг или локален HTTP сервер.
+Наставничка страна: `teacher.html` · сертификат: `certificate.html` · мини-игра: `crossover.html`.
 
-Качи ги сите фајлови во root на repo-то:
+## GitHub Pages
 
-`gocedelcevgame/goce-delcev-game`
+Содржината на овој директориум оди во **root** на [gocedelcevgame/goce-delcev-game](https://github.com/gocedelcevgame/goce-delcev-game).
+За првото ажурирање употреби нова гранка и pull request, па откако ќе се провери, merge во `main`.
+Live (старо издание додека не се потврди merge): https://gocedelcevgame.github.io/goce-delcev-game/
 
-Потоа вклучи GitHub Pages:
-Settings → Pages → Deploy from branch → main / root
+GitHub 2FA е заштита за најавување на сметката, не грешка во кодот на играта.
 
-Live URL:
-`https://gocedelcevgame.github.io/goce-delcev-game/`
+## Cloudflare Pages
 
-## Авторска насока
+Може да се користи истата статична структура, со build output `.` и без build command.
+За одделни игри одделни Cloudflare Pages проекти.
 
-WPA Institute – Macedonia  
-Dr. Sande Smiljanov
+## Правен статус
+
+Авторско/образовно пилот-издание. Не е официјално акредитирана програма.
+Правата и дозволите се опишани во `LICENSE.txt`, `THIRD_PARTY_NOTICES.md` и `MUSIC_PROVENANCE.md`.
+Нема гаранција за App Store/Google Play издание или проверка на физички TV.

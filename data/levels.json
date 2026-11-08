@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "Кукуш — почеток на патот",
-    "objective": "Запознај го родното место и собери 3 свитоци.",
-    "historicalFact": "Кукуш бил важна средина за просвета, култура и македонски дух.",
+    "objective": "Запознај го родниот крај и собери ги свитоците.",
+    "historicalFact": "Гоце Делчев е роден на 4 февруари 1872 година во Кукуш.",
     "free": true,
     "difficulty": "лесно",
     "targetScrolls": 3,
@@ -14,101 +14,107 @@
       "wisdom": 16,
       "coins": 9,
       "stars": 1
-    }
+    },
+    "place": "Кукуш"
   },
   {
     "id": 2,
     "title": "Училиштето и љубовта кон знаењето",
-    "objective": "Собери книги и отклучи прва мудрост.",
-    "historicalFact": "Гоце рано покажал љубов кон учење, книги и правичност.",
+    "objective": "Собери ги книгите на знаењето.",
+    "historicalFact": "Уште како дете Гоце многу читал; првите училишни години ги поминал во родниот Кукуш.",
     "free": true,
     "difficulty": "лесно",
-    "targetScrolls": 4,
-    "targetStars": 5,
+    "targetScrolls": 3,
+    "targetStars": 4,
     "speed": 1.39,
     "obstacleRate": 0.020399999999999998,
     "reward": {
       "wisdom": 17,
       "coins": 10,
       "stars": 1
-    }
+    },
+    "place": "Кукуш"
   },
   {
     "id": 3,
     "title": "Солун — град на идеи",
-    "objective": "Помини низ градските светилки на знаењето.",
-    "historicalFact": "Солун бил важен образовен и културен центар за македонската младина.",
+    "objective": "Помини низ светилките на градот.",
+    "historicalFact": "Гоце продолжил да учи во гимназија во Солун, голем град на брегот на Егејското Море.",
     "free": true,
     "difficulty": "лесно",
-    "targetScrolls": 5,
-    "targetStars": 6,
+    "targetScrolls": 3,
+    "targetStars": 4,
     "speed": 1.44,
     "obstacleRate": 0.021599999999999998,
     "reward": {
       "wisdom": 18,
       "coins": 11,
       "stars": 1
-    }
+    },
+    "place": "Солун"
   },
   {
     "id": 4,
     "title": "Културен натпревар",
-    "objective": "Собери 5 ѕвезди и одговори на мудрост.",
-    "historicalFact": "„Јас го разбирам светот како поле за културен натпревар меѓу народите.“",
+    "objective": "Собери ги свитоците со мудри зборови.",
+    "historicalFact": "„Јас го разбирам светот единствено како поле за културен натпревар меѓу народите.“ — зборови на Гоце Делчев.",
     "free": true,
     "difficulty": "лесно",
-    "targetScrolls": 2,
-    "targetStars": 7,
+    "targetScrolls": 3,
+    "targetStars": 4,
     "speed": 1.48,
     "obstacleRate": 0.022799999999999997,
     "reward": {
       "wisdom": 19,
       "coins": 12,
       "stars": 1
-    }
+    },
+    "place": "Солун"
   },
   {
     "id": 5,
     "title": "Труд и постојанство",
-    "objective": "Избегни препреки и собери мудрост.",
-    "historicalFact": "Трудот и постојанството се темел на секој голем потфат.",
+    "objective": "Истрај до крајот на патот.",
+    "historicalFact": "Во 1891 година Гоце заминал да учи во воено училиште во Софија.",
     "free": true,
     "difficulty": "лесно",
     "targetScrolls": 3,
-    "targetStars": 3,
+    "targetStars": 5,
     "speed": 1.52,
     "obstacleRate": 0.023999999999999997,
     "reward": {
       "wisdom": 20,
       "coins": 13,
       "stars": 2
-    }
+    },
+    "place": "Софија"
   },
   {
     "id": 6,
     "title": "Учителска мисија",
-    "objective": "Достави знаење до училницата.",
-    "historicalFact": "Гоце бил учител и верувал во просветување на народот.",
+    "objective": "Однеси ги книгите до училиштето.",
+    "historicalFact": "Во 1894 година Гоце станал учител во Ново Село кај Штип.",
     "free": true,
     "difficulty": "лесно",
-    "targetScrolls": 4,
-    "targetStars": 4,
+    "targetScrolls": 3,
+    "targetStars": 5,
     "speed": 1.57,
     "obstacleRate": 0.0252,
     "reward": {
       "wisdom": 21,
       "coins": 14,
       "stars": 1
-    }
+    },
+    "place": "Штип"
   },
   {
     "id": 7,
-    "title": "Штип — работа со народот",
-    "objective": "Поврзи 4 точки на доверба.",
-    "historicalFact": "Штип бил значајно место во неговата учителска и организациска дејност.",
+    "title": "Штип — средба со Даме",
+    "objective": "Пронајди ги соработниците.",
+    "historicalFact": "Во Штип Гоце се запознал со Даме Груев и се вклучил во Организацијата.",
     "free": true,
     "difficulty": "лесно",
-    "targetScrolls": 5,
+    "targetScrolls": 3,
     "targetStars": 5,
     "speed": 1.61,
     "obstacleRate": 0.0264,
@@ -116,101 +122,107 @@
       "wisdom": 22,
       "coins": 15,
       "stars": 1
-    }
+    },
+    "place": "Штип"
   },
   {
     "id": 8,
     "title": "Внатрешна сила",
-    "objective": "Осветли ја темнината со факти.",
-    "historicalFact": "Гоце сметал дека треба да се разбуди духот и самодовербата.",
+    "objective": "Собери ги свитоците на единството.",
+    "historicalFact": "Организацијата е основана на 23 октомври 1893 година во Солун.",
     "free": true,
     "difficulty": "лесно",
-    "targetScrolls": 2,
-    "targetStars": 6,
+    "targetScrolls": 4,
+    "targetStars": 5,
     "speed": 1.66,
     "obstacleRate": 0.0276,
     "reward": {
       "wisdom": 23,
       "coins": 16,
       "stars": 1
-    }
+    },
+    "place": "Солун"
   },
   {
     "id": 9,
     "title": "Даме Груев — другарство и доверба",
     "objective": "Отклучи го советот на Даме.",
-    "historicalFact": "Даме Груев бил еден од најзначајните македонски револуционерни дејци.",
+    "historicalFact": "Даме Груев, роден во Смилево, бил еден од основачите на Организацијата.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 3,
-    "targetStars": 7,
+    "targetScrolls": 4,
+    "targetStars": 5,
     "speed": 1.71,
     "obstacleRate": 0.0288,
     "reward": {
       "wisdom": 24,
       "coins": 17,
       "stars": 1
-    }
+    },
+    "place": "Смилево"
   },
   {
     "id": 10,
     "title": "Мрежа на доверба",
-    "objective": "Премини преку мостови и избегни дупки.",
-    "historicalFact": "Организациската работа бара доверба, ред и дисциплина.",
+    "objective": "Поврзи ги одборите и избегни ги дупките.",
+    "historicalFact": "Организацијата имала свои одбори во многу градови и села низ Македонија.",
     "free": false,
     "difficulty": "средно",
     "targetScrolls": 4,
-    "targetStars": 3,
+    "targetStars": 6,
     "speed": 1.75,
     "obstacleRate": 0.03,
     "reward": {
       "wisdom": 25,
       "coins": 18,
       "stars": 2
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 11,
     "title": "Патишта и канали",
-    "objective": "Пренеси писмо преку безбеден пат.",
-    "historicalFact": "Каналите и тајната пошта биле важни за комуникација.",
+    "objective": "Пренеси ја пораката безбедно.",
+    "historicalFact": "Куририте и тајните канали ги пренесувале писмата и вестите меѓу одборите.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 5,
-    "targetStars": 4,
+    "targetScrolls": 4,
+    "targetStars": 6,
     "speed": 1.79,
     "obstacleRate": 0.0312,
     "reward": {
       "wisdom": 26,
       "coins": 19,
       "stars": 1
-    }
+    },
+    "place": "Планинските патеки"
   },
   {
     "id": 12,
     "title": "Банско и Пирин",
-    "objective": "Собери планински ѕвезди.",
-    "historicalFact": "Гоце дејствувал и во Разлошко и Пиринскиот крај.",
+    "objective": "Изоди ја планинската патека.",
+    "historicalFact": "Во учебната 1895/96 година Гоце бил учител во Банско, во Пиринскиот крај.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 2,
-    "targetStars": 5,
+    "targetScrolls": 4,
+    "targetStars": 6,
     "speed": 1.84,
     "obstacleRate": 0.0324,
     "reward": {
       "wisdom": 27,
       "coins": 20,
       "stars": 1
-    }
+    },
+    "place": "Банско"
   },
   {
     "id": 13,
     "title": "Разговор со народот",
-    "objective": "Избери мирно решение во спор.",
-    "historicalFact": "Во играта се нагласува правичност, не омраза.",
+    "objective": "Посети ги селата.",
+    "historicalFact": "Гоце многу патувал низ селата и разговарал со луѓето за слободата и образованието.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 3,
+    "targetScrolls": 4,
     "targetStars": 6,
     "speed": 1.89,
     "obstacleRate": 0.0336,
@@ -218,98 +230,104 @@
       "wisdom": 28,
       "coins": 21,
       "stars": 1
-    }
+    },
+    "place": "Селата"
   },
   {
     "id": 14,
     "title": "Жените во делото",
-    "objective": "Отклучи мисија за храбрите учителки.",
-    "historicalFact": "Во македонското движење учествувале и жени, учителки и поддржувачки.",
+    "objective": "Собери ги свитоците на храбрите жени.",
+    "historicalFact": "И жени учествувале во Организацијата — како учителки, курирки и помагачки.",
     "free": false,
     "difficulty": "средно",
     "targetScrolls": 4,
-    "targetStars": 7,
+    "targetStars": 6,
     "speed": 1.93,
     "obstacleRate": 0.0348,
     "reward": {
       "wisdom": 29,
       "coins": 22,
       "stars": 1
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 15,
     "title": "Јане Сандански — планинска стратегија",
-    "objective": "Користи супер скок за планински препреки.",
-    "historicalFact": "Јане Сандански бил истакнат војвода и организатор.",
+    "objective": "Скокај како планинец.",
+    "historicalFact": "Јане Сандански бил војвода и водач на Организацијата во Серскиот крај.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 5,
-    "targetStars": 3,
+    "targetScrolls": 4,
+    "targetStars": 7,
     "speed": 1.98,
     "obstacleRate": 0.036,
     "reward": {
       "wisdom": 30,
       "coins": 23,
       "stars": 2
-    }
+    },
+    "place": "Сер"
   },
   {
     "id": 16,
     "title": "Ѓорче Петров — мудрост на зборот",
-    "objective": "Реши логичка задача.",
-    "historicalFact": "Ѓорче Петров бил идеолог и организатор.",
+    "objective": "Собери ги страниците на статутот.",
+    "historicalFact": "Ѓорче Петров и Гоце заедно го подготвиле Статутот на Организацијата во 1896 година.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 2,
-    "targetStars": 4,
+    "targetScrolls": 5,
+    "targetStars": 7,
     "speed": 2.02,
     "obstacleRate": 0.0372,
     "reward": {
       "wisdom": 31,
       "coins": 24,
       "stars": 1
-    }
+    },
+    "place": "Прилеп"
   },
   {
     "id": 17,
     "title": "Пере Тошев — трпение и ред",
-    "objective": "Премини тивко и без грешка.",
-    "historicalFact": "Пере Тошев бил значаен македонски револуционер.",
+    "objective": "Истрај со трпение.",
+    "historicalFact": "Пере Тошев, роден во Прилеп, бил учител и еден од водачите на Организацијата.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 3,
-    "targetStars": 5,
+    "targetScrolls": 5,
+    "targetStars": 7,
     "speed": 2.06,
     "obstacleRate": 0.0384,
     "reward": {
       "wisdom": 32,
       "coins": 25,
       "stars": 1
-    }
+    },
+    "place": "Прилеп"
   },
   {
     "id": 18,
     "title": "Народна школа",
-    "objective": "Собери 6 свитоци со факти.",
-    "historicalFact": "Просветата била клучна за будење на народот.",
+    "objective": "Собери ги буквите.",
+    "historicalFact": "Многу од водачите на Организацијата биле учители, како и самиот Гоце.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 4,
-    "targetStars": 6,
+    "targetScrolls": 5,
+    "targetStars": 7,
     "speed": 2.11,
     "obstacleRate": 0.039599999999999996,
     "reward": {
       "wisdom": 33,
       "coins": 26,
       "stars": 1
-    }
+    },
+    "place": "Училиштето"
   },
   {
     "id": 19,
     "title": "Слобода како одговорност",
-    "objective": "Избери чесна одлука.",
-    "historicalFact": "Слободата се претставува како достоинство и одговорност.",
+    "objective": "Помини без да паднеш.",
+    "historicalFact": "Од 1896 година Гоце и Ѓорче Петров биле претставници на Организацијата во Софија.",
     "free": false,
     "difficulty": "средно",
     "targetScrolls": 5,
@@ -320,312 +338,331 @@
       "wisdom": 34,
       "coins": 27,
       "stars": 1
-    }
+    },
+    "place": "Софија"
   },
   {
     "id": 20,
-    "title": "Културен мост",
-    "objective": "Спои симболи од различни култури.",
-    "historicalFact": "Културниот натпревар значи знаење, создавање и почит.",
+    "title": "Солунски конгрес",
+    "objective": "Собери ги свитоците на договорот.",
+    "historicalFact": "Во 1896 година во Солун се одржал конгрес на кој се договориле правилата на Организацијата.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 2,
-    "targetStars": 3,
+    "targetScrolls": 5,
+    "targetStars": 8,
     "speed": 2.2,
     "obstacleRate": 0.041999999999999996,
     "reward": {
       "wisdom": 35,
       "coins": 28,
       "stars": 2
-    }
+    },
+    "place": "Солун"
   },
   {
     "id": 21,
     "title": "Планинска патека",
-    "objective": "Прескокни големи дупки со двоен скок.",
-    "historicalFact": "Историјата служи како инспирација за активна авантура.",
+    "objective": "Изоди ја патеката низ планините.",
+    "historicalFact": "Гоце пешачел низ цела Македонија и ги обиколувал одборите на Организацијата.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 3,
-    "targetStars": 4,
+    "targetScrolls": 5,
+    "targetStars": 8,
     "speed": 2.25,
     "obstacleRate": 0.043199999999999995,
     "reward": {
       "wisdom": 36,
       "coins": 29,
       "stars": 1
-    }
+    },
+    "place": "Планините"
   },
   {
     "id": 22,
     "title": "Ноќ на светилки",
-    "objective": "Осветли ја темнината со факти.",
-    "historicalFact": "Знаењето ја победува темнината.",
+    "objective": "Пронајди го патот во темнината.",
+    "historicalFact": "За да бидат безбедни, куририте и патниците на Организацијата често патувале ноќе.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 4,
-    "targetStars": 5,
+    "targetScrolls": 5,
+    "targetStars": 8,
     "speed": 2.29,
     "obstacleRate": 0.044399999999999995,
     "reward": {
       "wisdom": 37,
       "coins": 30,
       "stars": 1
-    }
+    },
+    "place": "Ноќната патека"
   },
   {
     "id": 23,
     "title": "Мисија на курирот",
-    "objective": "Достави порака без судир.",
-    "historicalFact": "Курирската служба била важна за комуникација.",
+    "objective": "Пренеси го шифрираното писмо.",
+    "historicalFact": "Организацијата користела шифри — тајно писмо што можеле да го прочитаат само соработниците.",
     "free": false,
     "difficulty": "средно",
     "targetScrolls": 5,
-    "targetStars": 6,
+    "targetStars": 8,
     "speed": 2.33,
     "obstacleRate": 0.045599999999999995,
     "reward": {
       "wisdom": 38,
       "coins": 31,
       "stars": 1
-    }
+    },
+    "place": "Тајната пошта"
   },
   {
     "id": 24,
     "title": "Совет на камаради",
-    "objective": "Побарај помош од придружник.",
-    "historicalFact": "Помошниците даваат визуелни и звучни насоки.",
+    "objective": "Активирај ги помошниците.",
+    "historicalFact": "Гоце, Даме, Ѓорче, Пере и Јане биле соработници и другари во истата борба.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 2,
-    "targetStars": 7,
+    "targetScrolls": 6,
+    "targetStars": 8,
     "speed": 2.38,
     "obstacleRate": 0.046799999999999994,
     "reward": {
       "wisdom": 39,
       "coins": 32,
       "stars": 1
-    }
+    },
+    "place": "Соборците"
   },
   {
     "id": 25,
     "title": "Мапа на идеали",
-    "objective": "Отклучи нов регион.",
-    "historicalFact": "Играта избегнува политички спорови и се фокусира на вредности.",
+    "objective": "Собери ги свитоците на слободата.",
+    "historicalFact": "Гоце сакал Македонија да биде слободна и сите нејзини жители да живеат рамноправно.",
     "free": false,
     "difficulty": "средно",
-    "targetScrolls": 3,
-    "targetStars": 3,
+    "targetScrolls": 6,
+    "targetStars": 9,
     "speed": 2.42,
     "obstacleRate": 0.048,
     "reward": {
       "wisdom": 40,
       "coins": 33,
       "stars": 2
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 26,
     "title": "Труд и истрајност II",
-    "objective": "Заврши мисија без загубена енергија.",
-    "historicalFact": "Трудот и постојанството се пат до успех.",
+    "objective": "Подготви се добро пред скокот.",
+    "historicalFact": "Гоце бил против прерано востание — сметал дека народот прво треба добро да се подготви.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 4,
-    "targetStars": 4,
+    "targetScrolls": 6,
+    "targetStars": 9,
     "speed": 2.47,
     "obstacleRate": 0.049199999999999994,
     "reward": {
       "wisdom": 41,
       "coins": 34,
       "stars": 1
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 27,
     "title": "Достоинство",
-    "objective": "Одбери чесна одлука во дијалог.",
-    "historicalFact": "Достоинството е дел од херојската порака.",
+    "objective": "Помини со достоинство.",
+    "historicalFact": "На Солунскиот конгрес во јануари 1903 година било одлучено да се крене востание.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 5,
-    "targetStars": 5,
+    "targetScrolls": 6,
+    "targetStars": 9,
     "speed": 2.51,
     "obstacleRate": 0.0504,
     "reward": {
       "wisdom": 42,
       "coins": 35,
       "stars": 1
-    }
+    },
+    "place": "Солун"
   },
   {
     "id": 28,
     "title": "Мост кон иднината",
-    "objective": "Собери 7 ѕвезди.",
-    "historicalFact": "Историјата треба да ги инспирира децата за иднината.",
+    "objective": "Тргни на последната обиколка.",
+    "historicalFact": "На почетокот на 1903 година Гоце тргнал на обиколка низ Македонија за да се сретне со одборите.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 2,
-    "targetStars": 6,
+    "targetScrolls": 6,
+    "targetStars": 9,
     "speed": 2.56,
     "obstacleRate": 0.05159999999999999,
     "reward": {
       "wisdom": 43,
       "coins": 36,
       "stars": 1
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 29,
-    "title": "Семејна мисија",
-    "objective": "Активирај family-safe порака.",
-    "historicalFact": "Играта е наменета за деца и семејства.",
+    "title": "Родителите",
+    "objective": "Пронајди ги имињата во свитоците.",
+    "historicalFact": "Таткото на Гоце се викал Никола, а мајка му Султана.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 3,
-    "targetStars": 7,
+    "targetScrolls": 6,
+    "targetStars": 9,
     "speed": 2.6,
     "obstacleRate": 0.0528,
     "reward": {
       "wisdom": 44,
       "coins": 37,
       "stars": 1
-    }
+    },
+    "place": "Кукуш"
   },
   {
     "id": 30,
-    "title": "Квиз на мудроста",
-    "objective": "Одговори на 3 прашања.",
-    "historicalFact": "Квизовите ја зголемуваат образовната вредност.",
+    "title": "Гласот на учителот",
+    "objective": "Собери ги писмата.",
+    "historicalFact": "Гоце пишувал многу писма до пријателите и соработниците; многу од нив се зачувани и денес.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 4,
-    "targetStars": 3,
+    "targetScrolls": 6,
+    "targetStars": 10,
     "speed": 2.65,
     "obstacleRate": 0.05399999999999999,
     "reward": {
       "wisdom": 45,
       "coins": 38,
       "stars": 2
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 31,
-    "title": "Гласот на учителот",
-    "objective": "Слушни совет и избери насока.",
-    "historicalFact": "Учителската улога на Гоце е важна за играта.",
+    "title": "Светилник на народите",
+    "objective": "Собери ги свитоците на единството.",
+    "historicalFact": "Подоцнежниот статут на Организацијата велел дека член може да биде секој жител, без разлика на народноста или верата.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 5,
-    "targetStars": 4,
+    "targetScrolls": 6,
+    "targetStars": 10,
     "speed": 2.7,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 46,
       "coins": 39,
       "stars": 1
-    }
+    },
+    "place": "Македонија"
   },
   {
     "id": 32,
-    "title": "Светилник на народите",
-    "objective": "Неутрализирај темен облак со културна порака.",
-    "historicalFact": "Културниот натпревар е позитивна и универзална тема.",
+    "title": "Серскиот крај",
+    "objective": "Стигни до селото под планината.",
+    "historicalFact": "Во пролетта 1903 година Гоце се наоѓал во Серскиот крај, во селото Баница.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 2,
-    "targetStars": 5,
+    "targetScrolls": 7,
+    "targetStars": 10,
     "speed": 2.74,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 47,
       "coins": 40,
       "stars": 1
-    }
+    },
+    "place": "Серскиот крај"
   },
   {
     "id": 33,
     "title": "Патот кон Баница",
-    "objective": "Остани храбар и смирен.",
-    "historicalFact": "Последните денови се претставуваат достоинствено и ненасилно.",
+    "objective": "Оддај почит на херојот.",
+    "historicalFact": "Гоце Делчев загинал на 4 мај 1903 година кај селото Баница, во борба со османлиската војска.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 3,
-    "targetStars": 6,
+    "targetScrolls": 7,
+    "targetStars": 10,
     "speed": 2.79,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 48,
       "coins": 41,
       "stars": 1
-    }
+    },
+    "place": "Баница"
   },
   {
     "id": 34,
     "title": "Светлина над Македонија",
-    "objective": "Собери 10 светлини.",
-    "historicalFact": "Пораката е знаење, култура и човечност.",
+    "objective": "Собери ги светилките на Илинден.",
+    "historicalFact": "На Илинден, 2 август 1903 година, почнало Илинденското востание.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 4,
-    "targetStars": 7,
+    "targetScrolls": 7,
+    "targetStars": 10,
     "speed": 2.83,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 49,
       "coins": 42,
       "stars": 1
-    }
+    },
+    "place": "Илинден"
   },
   {
     "id": 35,
-    "title": "Културен натпревар на народите",
-    "objective": "Повтори ја водечката мисла.",
-    "historicalFact": "Ова е главната водилка на целата игра.",
+    "title": "Крушевска Република",
+    "objective": "Стигни до Крушево.",
+    "historicalFact": "Во Крушево била прогласена Крушевската Република, која траела десет дена.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 5,
-    "targetStars": 3,
+    "targetScrolls": 7,
+    "targetStars": 11,
     "speed": 2.88,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 50,
       "coins": 43,
       "stars": 2
-    }
+    },
+    "place": "Крушево"
   },
   {
     "id": 36,
-    "title": "Завршна мисија — Утринска зора",
-    "objective": "Отклучи среќен крај.",
-    "historicalFact": "„Ќе удри утринската зора и за нас...“",
+    "title": "Завршна мисија — Св. Спас",
+    "objective": "Оддај почит во Скопје.",
+    "historicalFact": "Од 1946 година посмртните останки на Гоце почиваат во дворот на црквата „Св. Спас“ во Скопје.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 2,
-    "targetStars": 4,
+    "targetScrolls": 7,
+    "targetStars": 11,
     "speed": 2.92,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 51,
       "coins": 44,
       "stars": 1
-    }
+    },
+    "place": "Скопје"
   },
   {
     "id": 37,
     "title": "Пантеон на мудроста",
-    "objective": "Отклучи финален свиток.",
-    "historicalFact": "Финалето ги слави учењето, мирот, трудот и достоинството.",
+    "objective": "Отклучи го последниот свиток.",
+    "historicalFact": "Градот Делчево и Универзитетот „Гоце Делчев“ во Штип го носат неговото име.",
     "free": false,
     "difficulty": "напредно",
-    "targetScrolls": 3,
-    "targetStars": 5,
+    "targetScrolls": 7,
+    "targetStars": 11,
     "speed": 2.96,
     "obstacleRate": 0.055,
     "reward": {
       "wisdom": 52,
       "coins": 45,
       "stars": 1
-    }
+    },
+    "place": "Делчево и Штип"
   }
 ]

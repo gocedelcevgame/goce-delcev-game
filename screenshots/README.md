@@ -1,1 +1,2 @@
-Add gameplay screenshots here.
+# Слики за продавници
+Насловни слики од сопствената икона; замени со вистински gameplay-screenshots (PrintScreen при играње).

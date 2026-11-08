@@ -1,0 +1,11 @@
+BEFORE RELEASE
+[ ] Verify all game files and latest branch diff
+[ ] Review MK and EN text; 37 stages and quiz
+[ ] Verify Suno Pro creation/download evidence for each track
+[ ] Confirm lawful paid activity or author royalties while working in MVR
+[ ] Validate personal/merchant registration and taxes
+[ ] Test on a real Android phone and real iPhone/iPad, including offline PWA
+[ ] Test landscape tablet, desktop keyboard and sound controls
+[ ] Cloudflare Pages linked to the correct GitHub repo (not another project)
+[ ] Approve release before publicly changing production URLs
+[ ] Monitor JS console errors after deployment; retain rollback SHA

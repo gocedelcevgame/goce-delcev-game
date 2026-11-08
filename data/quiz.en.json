@@ -1,0 +1,409 @@
+[
+ {
+  "level": 1,
+  "q": "In which town was Goce Delčev born?",
+  "a": [
+   "Kilkis",
+   "Skopje",
+   "Bitola"
+  ],
+  "correct": 0,
+  "why": "He was born in Kilkis, on 4 February 1872."
+ },
+ {
+  "level": 2,
+  "q": "Where did Goce spend his first school years?",
+  "a": [
+   "In Kilkis",
+   "In Vienna",
+   "In Athens"
+  ],
+  "correct": 0,
+  "why": "He attended primary school in his native town."
+ },
+ {
+  "level": 3,
+  "q": "In which city did Goce attend high school?",
+  "a": [
+   "Thessaloniki",
+   "Ohrid",
+   "Prilep"
+  ],
+  "correct": 0,
+  "why": "Thessaloniki was a great educational centre."
+ },
+ {
+  "level": 4,
+  "q": "How did Goce understand the world?",
+  "a": [
+   "As a field of cultural competition among nations",
+   "As a place without rules",
+   "As a game of luck"
+  ],
+  "correct": 0,
+  "why": "These are among Goce's most famous words."
+ },
+ {
+  "level": 5,
+  "q": "Which school did Goce attend in Sofia?",
+  "a": [
+   "A military school",
+   "A music school",
+   "A cooking school"
+  ],
+  "correct": 0,
+  "why": "He studied there from 1891."
+ },
+ {
+  "level": 6,
+  "q": "What was Goce's profession in 1894?",
+  "a": [
+   "Teacher",
+   "Baker",
+   "Sailor"
+  ],
+  "correct": 0,
+  "why": "He was a teacher in Novo Selo near Štip."
+ },
+ {
+  "level": 7,
+  "q": "Who did Goce meet in Štip?",
+  "a": [
+   "Dame Gruev",
+   "Alexander the Great",
+   "Cyril and Methodius"
+  ],
+  "correct": 0,
+  "why": "The meeting with Dame Gruev was important for his path."
+ },
+ {
+  "level": 8,
+  "q": "In which city was the Organization founded in 1893?",
+  "a": [
+   "Thessaloniki",
+   "Belgrade",
+   "Rome"
+  ],
+  "correct": 0,
+  "why": "It was founded on 23 October 1893."
+ },
+ {
+  "level": 9,
+  "q": "Where was Dame Gruev from?",
+  "a": [
+   "Smilevo",
+   "Kilkis",
+   "Bansko"
+  ],
+  "correct": 0,
+  "why": "Dame Gruev was born in Smilevo, near Bitola."
+ },
+ {
+  "level": 10,
+  "q": "What did the Organization have in towns and villages?",
+  "a": [
+   "Its own committees",
+   "Factories",
+   "Airports"
+  ],
+  "correct": 0,
+  "why": "The committees were a network of trust."
+ },
+ {
+  "level": 11,
+  "q": "Who carried the letters between the committees?",
+  "a": [
+   "The couriers",
+   "Bicycle postmen",
+   "Zoo pigeons"
+  ],
+  "correct": 0,
+  "why": "Couriers were vital for communication."
+ },
+ {
+  "level": 12,
+  "q": "In which region is Bansko located?",
+  "a": [
+   "The Pirin region",
+   "The Ohrid region",
+   "The Strumica region"
+  ],
+  "correct": 0,
+  "why": "Bansko lies below the Pirin mountain."
+ },
+ {
+  "level": 13,
+  "q": "What did Goce talk about most with people?",
+  "a": [
+   "Freedom and education",
+   "Fashion",
+   "Sports"
+  ],
+  "correct": 0,
+  "why": "He believed knowledge awakens a nation."
+ },
+ {
+  "level": 14,
+  "q": "Did women take part in the Organization?",
+  "a": [
+   "Yes, as teachers, couriers and helpers",
+   "No, never",
+   "Only as guests"
+  ],
+  "correct": 0,
+  "why": "Their help was very important."
+ },
+ {
+  "level": 15,
+  "q": "In which region did Jane Sandanski operate?",
+  "a": [
+   "The Serres region",
+   "The Ohrid region",
+   "The Kumanovo region"
+  ],
+  "correct": 0,
+  "why": "He was one of the leaders in the Serres region."
+ },
+ {
+  "level": 16,
+  "q": "With whom did Goce prepare the Statute in 1896?",
+  "a": [
+   "With Gjorce Petrov",
+   "With Pere Tošev",
+   "With Jane Sandanski"
+  ],
+  "correct": 0,
+  "why": "The two were close collaborators."
+ },
+ {
+  "level": 17,
+  "q": "In which town was Pere Tošev born?",
+  "a": [
+   "Prilep",
+   "Štip",
+   "Thessaloniki"
+  ],
+  "correct": 0,
+  "why": "Pere Tošev was also a teacher."
+ },
+ {
+  "level": 18,
+  "q": "What profession did many leaders of the Organization have?",
+  "a": [
+   "Teachers",
+   "Pilots",
+   "Programmers"
+  ],
+  "correct": 0,
+  "why": "Education was at the heart of their work."
+ },
+ {
+  "level": 19,
+  "q": "Where were Goce and Gjorce Petrov representatives of the Organization?",
+  "a": [
+   "In Sofia",
+   "In Paris",
+   "In Istanbul"
+  ],
+  "correct": 0,
+  "why": "There they represented the Organization to the world."
+ },
+ {
+  "level": 20,
+  "q": "What was held in Thessaloniki in 1896?",
+  "a": [
+   "A congress of the Organization",
+   "The Olympic Games",
+   "A book fair"
+  ],
+  "correct": 0,
+  "why": "The rules were agreed at the congress."
+ },
+ {
+  "level": 21,
+  "q": "How did Goce most often travel across Macedonia?",
+  "a": [
+   "On foot, over the mountains",
+   "By plane",
+   "By boat along the Vardar"
+  ],
+  "correct": 0,
+  "why": "These were long and hard journeys."
+ },
+ {
+  "level": 22,
+  "q": "When did the couriers often travel?",
+  "a": [
+   "At night",
+   "Only on holidays",
+   "Only by carriage"
+  ],
+  "correct": 0,
+  "why": "The night gave them protection."
+ },
+ {
+  "level": 23,
+  "q": "What are ciphers?",
+  "a": [
+   "Secret writing",
+   "A kind of song",
+   "A kind of clothing"
+  ],
+  "correct": 0,
+  "why": "Ciphers kept the messages safe."
+ },
+ {
+  "level": 24,
+  "q": "Which of these was NOT Goce's collaborator?",
+  "a": [
+   "Alexander the Great",
+   "Dame Gruev",
+   "Gjorce Petrov"
+  ],
+  "correct": 0,
+  "why": "Alexander the Great lived more than 2,000 years earlier."
+ },
+ {
+  "level": 25,
+  "q": "What did Goce want for the people of Macedonia?",
+  "a": [
+   "To live free and as equals",
+   "To leave",
+   "To quarrel"
+  ],
+  "correct": 0,
+  "why": "Equality was part of his ideals."
+ },
+ {
+  "level": 26,
+  "q": "What did Goce think about an uprising too soon?",
+  "a": [
+   "That good preparation comes first",
+   "That it should happen immediately",
+   "That it doesn't matter"
+  ],
+  "correct": 0,
+  "why": "He believed rushing was dangerous."
+ },
+ {
+  "level": 27,
+  "q": "In which year was it decided to raise an uprising?",
+  "a": [
+   "1903",
+   "1803",
+   "2003"
+  ],
+  "correct": 0,
+  "why": "The decision was made in January 1903."
+ },
+ {
+  "level": 28,
+  "q": "Why did Goce set out on a tour in 1903?",
+  "a": [
+   "To meet the committees",
+   "For a seaside holiday",
+   "To buy a horse"
+  ],
+  "correct": 0,
+  "why": "He wanted to see the preparations personally."
+ },
+ {
+  "level": 29,
+  "q": "What was Goce's father named?",
+  "a": [
+   "Nikola",
+   "Petar",
+   "Marko"
+  ],
+  "correct": 0,
+  "why": "His mother was named Sultana."
+ },
+ {
+  "level": 30,
+  "q": "What did Goce leave behind that is kept to this day?",
+  "a": [
+   "Letters",
+   "Video recordings",
+   "Computer games"
+  ],
+  "correct": 0,
+  "why": "The letters tell us how he thought."
+ },
+ {
+  "level": 31,
+  "q": "Who could be a member according to the later statute?",
+  "a": [
+   "Any resident, regardless of ethnicity or faith",
+   "Only teachers",
+   "Only children"
+  ],
+  "correct": 0,
+  "why": "That was a message of unity."
+ },
+ {
+  "level": 32,
+  "q": "In which region is the village of Banitsa?",
+  "a": [
+   "The Serres region",
+   "The Tetovo region",
+   "The Debar region"
+  ],
+  "correct": 0,
+  "why": "Banitsa is a village near Serres."
+ },
+ {
+  "level": 33,
+  "q": "When did Goce Delčev die?",
+  "a": [
+   "On 4 May 1903",
+   "On 2 August 1903",
+   "On 4 February 1872"
+  ],
+  "correct": 0,
+  "why": "He died near the village of Banitsa, aged 31."
+ },
+ {
+  "level": 34,
+  "q": "When did the Ilinden Uprising begin?",
+  "a": [
+   "On 2 August 1903",
+   "On 1 January 1900",
+   "On 11 October 1941"
+  ],
+  "correct": 0,
+  "why": "It began a few months after Goce's death."
+ },
+ {
+  "level": 35,
+  "q": "How long did the Kruševo Republic last?",
+  "a": [
+   "Ten days",
+   "Ten years",
+   "One hour"
+  ],
+  "correct": 0,
+  "why": "It was proclaimed in August 1903."
+ },
+ {
+  "level": 36,
+  "q": "Where have Goce's remains rested since 1946?",
+  "a": [
+   "In the yard of \"St. Spas\" in Skopje",
+   "In Athens",
+   "In Vienna"
+  ],
+  "correct": 0,
+  "why": "Many people come there to pay their respects."
+ },
+ {
+  "level": 37,
+  "q": "Which town carries the name of Goce Delčev?",
+  "a": [
+   "Delčevo",
+   "Gostivar",
+   "Struga"
+  ],
+  "correct": 0,
+  "why": "The university in Štip also bears his name."
+ }
+]

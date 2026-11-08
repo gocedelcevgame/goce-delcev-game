@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="mk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WPA Time Bridge - two historical journeys</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;padding:14px;min-height:100vh;background:radial-gradient(circle at top,#213653,#070914 80%);color:#faf5e8;font:16px/1.55 system-ui,sans-serif;text-align:center}
+main{max-width:1000px;margin:auto}h1{color:#f8d77a;margin:8px 0;font-size:clamp(24px,4vw,38px)}p{margin:8px auto;color:#d6e5f2}.sub{color:#ffe5ab;max-width:800px}canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#09152e;border:2px solid #c9aa56;border-radius:18px;box-shadow:0 20px 60px #0008}nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:10px auto}button,a.btn{font:inherit;border:1px solid #b4995b;border-radius:12px;background:#172742;color:#f5df9d;padding:12px 16px;text-decoration:none;cursor:pointer;touch-action:none;min-width:80px}button:focus-visible,a:focus-visible{outline:3px solid white}button:active{background:#a88b39;color:#101521}.note{max-width:800px;font-size:13px;color:#c1cadb}
+@media(max-width:600px){button,a.btn{flex:1;min-width:42%}body{padding:7px}}
+</style></head><body>
+<main><h1 id="title">WPA Time Bridge / Протокол на времето</h1><p class="sub" id="instructions"></p><canvas id="g" width="960" height="540" role="img" aria-label="Two heroes collect eight knowledge scrolls"></canvas>
+<nav aria-label="Game controls"><button data-hold="left" type="button">&#x2B05; Left / Лево</button><button data-hold="right" type="button">Right / Десно &#x27A1;</button><button id="jump" type="button">&#x2B06; Jump / Скок</button><button id="switch" type="button">&#x21C4; Switch / Смени</button><button id="reset" type="button">Restart / Повторно</button><a class="btn" href="index.html">Back / Назад</a></nav>
+<p id="status" role="status" aria-live="polite"></p><p class="note" id="disclosure"></p>
+</main><script>
+'use strict';
+const c=document.getElementById('g'),ctx=c.getContext('2d');
+const EN=(()=>{try{return localStorage.getItem('wpa_lang')==='en'}catch(e){return false}})();
+const T=EN?{
+ instruction:'Arrows: move, Space: jump, X: switch. Collect each token with the matching hero. All eight can be reached.',
+ status:'Collected', finish:'Time Bridge complete! A personal mini-game achievement was saved on this device.',
+ disclosure:'This is a fictional educational mini-game. It does not verify completion of the other game or issue an official flag or certificate.',
+ a:'Alexander',g:'Goce'}:{
+ instruction:'Стрелки: движење, Space: скок, X: смени херој. Собери го секој свиток со соодветниот херој.',
+ status:'Собрани', finish:'Протоколот на времето е завршен! Лична награда е зачувана на овој уред.',
+ disclosure:'Ова е образовна фантастична мини-игра. Не го проверува напредокот во другата игра и не доделува официјално знаме или сертификат.',
+ a:'Александар',g:'Гоце'};
+document.getElementById('instructions').textContent=T.instruction;
+document.getElementById('disclosure').textContent=T.disclosure;
+const floor=410;
+const original=[{x:130,y:373,h:0},{x:240,y:355,h:1},{x:350,y:325,h:0},{x:458,y:370,h:1},{x:560,y:333,h:0},{x:670,y:360,h:1},{x:778,y:325,h:0},{x:871,y:375,h:1}];
+let hero=0,px=65,py=floor,vy=0,grounded=true,over=false,items=[],count=0;
+const keys={left:false,right:false};
+function reset(){hero=0;px=65;py=floor;vy=0;grounded=true;over=false;count=0;items=original.map(o=>({...o}));updateStatus();}
+function updateStatus(){document.getElementById('status').textContent=T.status+': '+count+'/8';}
+function jump(){if(!over&&grounded){vy=-13;grounded=false;}}
+function switchHero(){if(!over){hero=1-hero;}}
+function complete(){over=true;try{localStorage.setItem('wpa_time_bridge_challenge','1')}catch(e){} document.getElementById('status').textContent=T.finish;}
+function draw(){
+ const sky=ctx.createLinearGradient(0,0,0,540);sky.addColorStop(0,'#263e66');sky.addColorStop(1,'#141b37');ctx.fillStyle=sky;ctx.fillRect(0,0,960,540);
+ ctx.fillStyle='#fff9c4';for(let i=0;i<55;i++){ctx.globalAlpha=.16+(i%4)*.11;ctx.fillRect((i*137)%960,(i*89)%280,2,2)}ctx.globalAlpha=1;
+ ctx.fillStyle='#334d66';ctx.beginPath();ctx.moveTo(0,410);ctx.lineTo(0,290);ctx.lineTo(165,332);ctx.lineTo(312,268);ctx.lineTo(469,342);ctx.lineTo(630,265);ctx.lineTo(782,335);ctx.lineTo(960,290);ctx.lineTo(960,410);ctx.fill();
+ ctx.fillStyle='#54402b';ctx.fillRect(0,410,960,130);ctx.fillStyle='#c9a956';ctx.fillRect(0,408,960,4);
+ for(const item of items){ctx.fillStyle=item.h?'#8ad7ff':'#fce48c';ctx.beginPath();ctx.arc(item.x,item.y,14,0,Math.PI*2);ctx.fill();ctx.lineWidth=2;ctx.strokeStyle='#142035';ctx.stroke();ctx.font='bold 17px system-ui';ctx.textAlign='center';ctx.fillStyle='#142035';ctx.fillText(item.h?'G':'A',item.x,item.y+6)}
+ ctx.fillStyle=hero?'#8ad7ff':'#fcd66e';ctx.fillRect(px-12,py-55,24,40);ctx.beginPath();ctx.arc(px,py-68,14,0,2*Math.PI);ctx.fill();ctx.fillRect(px-10,py-15,8,15);ctx.fillRect(px+2,py-15,8,15);
+ ctx.fillStyle='#fff';ctx.font='bold 17px system-ui';ctx.textAlign='center';ctx.fillText(hero?T.g:T.a,px,py-90);ctx.fillStyle='#f9df8b';ctx.font='bold 20px system-ui';ctx.fillText(T.status+': '+count+'/8',480,42);
+ if(over){ctx.fillStyle='#091425ed';ctx.fillRect(0,0,960,540);ctx.fillStyle='#f9dc81';ctx.textAlign='center';ctx.font='bold 28px system-ui';ctx.fillText(EN?'Time Bridge completed!':'Протоколот на времето е завршен!',480,255);ctx.font='20px system-ui';ctx.fillStyle='#fff';ctx.fillText(EN?'Personal educational achievement':'Лична образовна награда',480,295)}
+}
+let previous=0;
+function loop(now){const dt=Math.min(2.5,(now-(previous||now))/16.67);previous=now;
+ if(!over){if(keys.left)px-=4.7*dt;if(keys.right)px+=4.7*dt;px=Math.max(28,Math.min(930,px));
+ vy+=0.64*dt;py+=vy*dt;if(py>=floor){py=floor;vy=0;grounded=true;}
+ for(const item of items){if(item.h===hero&&Math.hypot(item.x-px,item.y-(py-35))<39){item.done=true;count++;updateStatus()}}
+ items=items.filter(x=>!x.done);if(count===original.length)complete();
+ }
+ draw();requestAnimationFrame(loop);
+}
+addEventListener('keydown',e=>{const k=e.code;if(['ArrowLeft','ArrowRight','Space','KeyX','KeyR'].includes(k))e.preventDefault();if(k==='ArrowLeft')keys.left=true;if(k==='ArrowRight')keys.right=true;if(k==='Space'&&!e.repeat)jump();if(k==='KeyX'&&!e.repeat)switchHero();if(k==='KeyR'&&!e.repeat)reset();});
+addEventListener('keyup',e=>{if(e.code==='ArrowLeft')keys.left=false;if(e.code==='ArrowRight')keys.right=false;});
+for(const btn of document.querySelectorAll('[data-hold]')){const key=btn.dataset.hold;btn.addEventListener('pointerdown',e=>{e.preventDefault();try{btn.setPointerCapture(e.pointerId)}catch(err){}keys[key]=true});for(const ev of ['pointerup','pointercancel','lostpointercapture'])btn.addEventListener(ev,()=>keys[key]=false)}
+document.getElementById('jump').addEventListener('click',jump);
+document.getElementById('switch').addEventListener('click',switchHero);
+document.getElementById('reset').addEventListener('click',reset);
+reset();requestAnimationFrame(loop);
+</script></body></html>

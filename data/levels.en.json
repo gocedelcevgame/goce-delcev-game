@@ -1,0 +1,298 @@
+[
+  {
+    "id": 1,
+    "title": "Kilkis — the beginning of the journey",
+    "fact": "Goce Delčev was born on 4 February 1872 in Kilkis.",
+    "objective": "Explore the birthplace and collect knowledge scrolls.",
+    "place": "Kilkis",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "title": "School and the love of learning",
+    "fact": "Even as a child Goce read a lot; he spent his first school years in his native Kilkis.",
+    "objective": "Collect the books of knowledge.",
+    "place": "Kilkis",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "title": "Thessaloniki — a city of ideas",
+    "fact": "Goce continued his education at a high school in Thessaloniki, a big city on the Aegean coast.",
+    "objective": "Follow the lanterns through the city.",
+    "place": "Thessaloniki",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "title": "A cultural contest",
+    "fact": "“I understand the world only as a field of cultural competition among nations.” — words of Goce Delčev.",
+    "objective": "Collect scrolls of thoughtful words.",
+    "place": "Thessaloniki",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "title": "Hard work and persistence",
+    "fact": "In 1891 Goce went to study at a military school in Sofia.",
+    "objective": "Persevere to the end of the path.",
+    "place": "Sofia",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "title": "The teacher's mission",
+    "fact": "In 1894 Goce became a teacher in Novo Selo near Štip.",
+    "objective": "Bring the books to the classroom.",
+    "place": "Stip",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "title": "Štip — meeting Dame",
+    "fact": "In Štip Goce met Dame Gruev and joined the Organization.",
+    "objective": "Find the trusted collaborators.",
+    "place": "Stip",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "title": "Inner strength",
+    "fact": "The Organization was founded on 23 October 1893 in Thessaloniki.",
+    "objective": "Collect scrolls of unity.",
+    "place": "Thessaloniki",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "title": "Dame Gruev — comradeship and trust",
+    "fact": "Dame Gruev, born in Smilevo, was one of the founders of the Organization.",
+    "objective": "Unlock Dame Gruev's advice.",
+    "place": "Smilevo",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "title": "A network of trust",
+    "fact": "The Organization had its own committees in many towns and villages across Macedonia.",
+    "objective": "Connect the committees and avoid obstacles.",
+    "place": "Macedonia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "title": "Roads and channels",
+    "fact": "Couriers and secret channels carried the letters and news between the committees.",
+    "objective": "Deliver the message safely.",
+    "place": "Mountain paths",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "title": "Bansko and Pirin",
+    "fact": "In the 1895/96 school year Goce was a teacher in Bansko, in the Pirin region.",
+    "objective": "Complete the mountain trail.",
+    "place": "Bansko",
+    "difficulty": "medium"
+  },
+  {
+    "id": 13,
+    "title": "Talking with the people",
+    "fact": "Goce travelled a lot through the villages, talking with people about freedom and education.",
+    "objective": "Visit the villages.",
+    "place": "Villages",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "title": "Women in the cause",
+    "fact": "Women too took part in the Organization — as teachers, couriers and helpers.",
+    "objective": "Collect scrolls commemorating the brave women.",
+    "place": "Macedonia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "title": "Jane Sandanski — mountain strategy",
+    "fact": "Jane Sandanski was a vojvoda and a leader of the Organization in the Serres region.",
+    "objective": "Jump along the mountain track.",
+    "place": "Serres",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "title": "Gjorce Petrov — the wisdom of words",
+    "fact": "Gjorce Petrov and Goce together prepared the Statute of the Organization in 1896.",
+    "objective": "Collect pages of the statute.",
+    "place": "Prilep",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "title": "Pere Tošev — patience and order",
+    "fact": "Pere Tošev, born in Prilep, was a teacher and one of the leaders of the Organization.",
+    "objective": "Keep going with patience.",
+    "place": "Prilep",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "title": "The people's school",
+    "fact": "Many of the Organization's leaders were teachers, like Goce himself.",
+    "objective": "Collect letters for the school.",
+    "place": "School",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "title": "Freedom as responsibility",
+    "fact": "From 1896 Goce and Gjorce Petrov were the Organization's representatives in Sofia.",
+    "objective": "Cross the route without falling.",
+    "place": "Sofia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "title": "The Thessaloniki Congress",
+    "fact": "In 1896 a congress was held in Thessaloniki where the rules of the Organization were agreed.",
+    "objective": "Collect the congress records.",
+    "place": "Thessaloniki",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "title": "The mountain path",
+    "fact": "Goce walked through the whole of Macedonia, visiting the Organization's committees.",
+    "objective": "Travel the mountain track.",
+    "place": "Mountains",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "title": "Night of lanterns",
+    "fact": "To stay safe, the couriers and travellers of the Organization often travelled at night.",
+    "objective": "Find the lantern-lit path.",
+    "place": "Night trail",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "title": "The courier's mission",
+    "fact": "The Organization used ciphers — secret writing that only collaborators could read.",
+    "objective": "Deliver the coded message.",
+    "place": "Secret courier",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "title": "Council of comrades",
+    "fact": "Goce, Dame, Gjorce, Pere and Jane were collaborators and comrades in the same struggle.",
+    "objective": "Activate your companions.",
+    "place": "Companions",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "title": "A map of ideals",
+    "fact": "Goce wanted Macedonia to be free and all its people to live as equals.",
+    "objective": "Collect the scrolls of freedom.",
+    "place": "Macedonia",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "title": "Work and persistence II",
+    "fact": "Goce was against an uprising too soon — he believed the people must first prepare well.",
+    "objective": "Prepare carefully before the jump.",
+    "place": "Macedonia",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 27,
+    "title": "Dignity",
+    "fact": "At the Thessaloniki Congress in January 1903 it was decided to raise an uprising.",
+    "objective": "Keep your dignity throughout the path.",
+    "place": "Thessaloniki",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 28,
+    "title": "A bridge to the future",
+    "fact": "In early 1903 Goce set out on a tour of Macedonia to meet the committees.",
+    "objective": "Set off on the final journey.",
+    "place": "Macedonia",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 29,
+    "title": "The parents",
+    "fact": "Goce's father was named Nikola, and his mother Sultana.",
+    "objective": "Find the family names among the scrolls.",
+    "place": "Kilkis",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 30,
+    "title": "The teacher's voice",
+    "fact": "Goce wrote many letters to his friends and collaborators; many of them are preserved to this day.",
+    "objective": "Collect the letters.",
+    "place": "Macedonia",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 31,
+    "title": "A lantern of nations",
+    "fact": "The later statute of the Organization said any resident could be a member, regardless of ethnicity or faith.",
+    "objective": "Collect the scrolls of unity.",
+    "place": "Macedonia",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 32,
+    "title": "The Serres region",
+    "fact": "In the spring of 1903 Goce was in the Serres region, in the village of Banitsa.",
+    "objective": "Reach the village by the mountains.",
+    "place": "Serres region",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 33,
+    "title": "The road to Banitsa",
+    "fact": "Goce Delčev died on 4 May 1903 near the village of Banitsa, in a fight with the Ottoman army.",
+    "objective": "Pay respectful tribute to the historical figure.",
+    "place": "Banitsa",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 34,
+    "title": "Light over Macedonia",
+    "fact": "On Ilinden, 2 August 1903, the Ilinden Uprising began.",
+    "objective": "Collect the lanterns marking Ilinden.",
+    "place": "Ilinden",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 35,
+    "title": "The Kruševo Republic",
+    "fact": "In Kruševo the Kruševo Republic was proclaimed; it lasted ten days.",
+    "objective": "Reach Krusevo.",
+    "place": "Krusevo",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 36,
+    "title": "Final mission — St. Spas",
+    "fact": "Since 1946 the remains of Goce rest in the yard of the \"St. Spas\" church in Skopje.",
+    "objective": "Pay tribute in Skopje.",
+    "place": "Skopje",
+    "difficulty": "advanced"
+  },
+  {
+    "id": 37,
+    "title": "Pantheon of wisdom",
+    "fact": "The town of Delčevo and the \"Goce Delčev\" University in Štip carry his name.",
+    "objective": "Unlock the final scroll.",
+    "place": "Delcevo and Stip",
+    "difficulty": "advanced"
+  }
+]

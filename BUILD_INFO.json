@@ -1,0 +1,14 @@
+{
+  "product": "Патот на Слободата — Гоце Делчев",
+  "version": "2.5.4",
+  "base_version": "2.5.3",
+  "date": "2026-11-08",
+  "status": "public playtest release candidate",
+  "github_repository": "gocedelcevgame/goce-delcev-game",
+  "deployment": "not performed",
+  "payment": "inactive",
+  "tv": "separate experimental package",
+  "source": "verified previous local build",
+  "song_file": "assets/audio/pesna-patot-na-slobodata.m4a",
+  "song_sha256": "abed144bce8f6bdb45fbea209a7f6c29498ae143758e871828ae9366bf93a558"
+}

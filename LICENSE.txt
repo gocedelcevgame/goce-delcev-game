@@ -1,0 +1,21 @@
+WPA EDUCATIONAL GAMES — PUBLIC PLAYTEST / EDUCATIONAL PILOT TERMS
+Product: Патот на Слободата — Гоце Делчев
+Owner / Author: Sande Smiljanov (natural person)
+Contact: gocedelcevgame@gmail.com
+Status: controlled public educational test (2026-11-08). NOT a paid contract.
+
+МАКЕДОНСКИ
+1. Оваа конкретна тест-верзија може бесплатно да се игра од поединци и да се прикажува во училница за некомерцијални, надгледувани образовни активности. Не се бара плаќање и не се создава платена лиценца.
+2. Не е дозволена препродажба, повторно хостирање, преработка или посебна дистрибуција на изворниот код, музиката или графиката без претходна писмена дозвола и проверка на применливите права.
+3. Платените институционални услуги (поддршка, прилагодување, наменска инсталација/хостирање, проширени наставнички услуги) не се вклучени во ова бесплатно тест-издание и би биле предмет на посебен писмен договор откако ќе се исполнат службените, даночните и авторскоправните предуслови.
+4. Песната е наведена како создадена со Suno AI според изјавата на авторот. Правниот статус и комерцијалната лиценца треба дополнително да се документираат. Авторските права на компонентите од трети лица остануваат под нивните сопствени лиценци.
+5. Производот е образовна симулација/игра, не официјален историски извор, акредитиран наставен материјал или државен производ. Не се собираат платежни податоци.
+
+ENGLISH
+1. This specific test build may be played free of charge for personal use and demonstrated in supervised, non-commercial classroom activities. No payment or paid licence is granted here.
+2. Resale, rehosting, modification, or separate redistribution of code, soundtrack or artwork is not permitted without written permission and verification of applicable rights.
+3. Any paid institutional service (support, customization, dedicated hosting/installations or extended teaching support) requires a separate signed agreement after employment, tax and rights review. Free classroom demonstration remains separate from paid services.
+4. The author reports creating the soundtrack using Suno AI. Commercial entitlement and provenance remain subject to documentary verification. Third-party components retain their own licence terms.
+5. The work is a historical educational game, not an official state product or certified curriculum. No payments or card information are accepted in this build.
+
+Copyright (c) 2026 Sande Smiljanov, to the extent rights subsist under applicable law.
