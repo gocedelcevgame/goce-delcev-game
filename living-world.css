@@ -1,0 +1,40 @@
+/* Living Historical Worlds — decorative layers, responsive, pointer-safe. */
+.wl-controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:12px 0;color:#fff2c8;font:500 13px/1.45 system-ui,sans-serif}
+.wl-controls button,.wl-game-toggle{font:600 13px/1.3 system-ui,sans-serif;cursor:pointer;min-height:40px;padding:8px 12px;border-radius:999px;border:1px solid rgba(214,185,111,.7);background:#182b39;color:#ffe7a0}
+.wl-controls button:focus-visible,.wl-game-toggle:focus-visible,.wl-controls input:focus-visible{outline:3px solid #fff0aa;outline-offset:3px}
+.wl-controls button[aria-pressed="true"],.wl-game-toggle[aria-pressed="true"]{background:#1a483f;border-color:#b9e9be;color:#e2ffe5}
+.wl-controls label{display:flex;align-items:center;gap:8px;min-height:40px}
+.wl-controls input[type="range"]{width:94px;accent-color:#eac273}
+.wl-controls [data-nature-caption]{flex-basis:100%;color:#eadab9;opacity:.85;font-size:12px}
+.wl-game-toggle{margin:4px 0 7px;font-size:12px;min-height:33px;padding:5px 11px}
+.wl-world{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;isolation:isolate;user-select:none}
+.wl-world *{position:absolute;box-sizing:border-box;pointer-events:none}
+.wl-tree{bottom:82px;width:10px;height:76px;background:linear-gradient(90deg,#624a35,#9a7048,#5b422d);transform:scale(var(--size,1));transform-origin:50% 100%;border-radius:4px 4px 0 0;filter:drop-shadow(1px 2px 3px #1e3028)}
+.wl-tree:before,.wl-tree:after{content:"";position:absolute;border-radius:48% 52% 54% 46%;background:radial-gradient(ellipse at 43% 28%,#8eae6e 0 5%,#47774f 55%,#234c41 100%);width:68px;height:56px;left:-29px;top:-39px;transform-origin:50% 85%}
+.wl-tree:after{width:52px;height:49px;left:-34px;top:-22px;background:radial-gradient(circle at 35% 33%,#8fb96b,#356a4a 66%,#1b463a)}
+.wl-fence{height:29px;bottom:81px;border-top:5px solid #b79a74;border-bottom:4px solid #856341;background:repeating-linear-gradient(90deg,rgba(137,106,70,.80) 0 7px,transparent 7px 41px);opacity:.66}
+.wl-flower{bottom:82px;width:4px;height:24px;background:#53885b;transform-origin:bottom}
+.wl-flower:before{content:"";position:absolute;top:-6px;left:-7px;width:16px;height:16px;background:radial-gradient(circle,#ffe0a1 0 20%,#cf879b 21% 53%,transparent 55%);border-radius:50%}
+.wl-stream{bottom:80px;height:20px;border-radius:48% 40% 35% 50%;background:repeating-linear-gradient(110deg,#266c84 0 17px,#6bb5b9 19px 23px,#24697b 25px 44px);opacity:.83;box-shadow:0 2px 9px #338ea6,0 -2px 6px #96d5cd;animation:wl-water 4.5s linear infinite}
+.wl-reeds{bottom:97px;width:35px;height:39px;background:repeating-linear-gradient(100deg,transparent 0 5px,#5b875d 6px 8px,transparent 10px 13px);clip-path:polygon(0 100%,6% 14%,18% 65%,34% 0,49% 67%,75% 18%,93% 100%)}
+.wl-bird{width:25px;height:12px;opacity:.58;animation:wl-bird-fly 10s ease-in-out infinite;animation-delay:var(--delay,0s)}
+.wl-bird:before,.wl-bird:after{content:"";position:absolute;border-top:3px solid #f7e1b8;border-radius:50%;width:15px;height:10px;top:1px}
+.wl-bird:before{left:0;transform:rotate(17deg)}.wl-bird:after{right:0;transform:rotate(-17deg)}
+.wl-butterfly{width:13px;height:15px;opacity:.85;animation:wl-butterfly-bob 2.8s ease-in-out infinite;animation-delay:var(--delay,0s)}
+.wl-butterfly:before,.wl-butterfly:after{content:"";position:absolute;width:8px;height:12px;border-radius:80% 20% 80% 20%;background:#e1a9b3;left:0;transform-origin:right center;animation:wl-wing .35s alternate infinite}
+.wl-butterfly:after{left:6px;transform-origin:left center;border-radius:20% 80% 20% 80%;background:#f2cc8c;animation-delay:-.2s}
+.wl-firefly{width:7px;height:7px;border-radius:50%;background:#f6e9ab;box-shadow:0 0 11px 3px #e5d678;opacity:.7;animation:wl-firefly 3.4s ease-in-out infinite;animation-delay:var(--delay,0s)}
+.wl-fountain{bottom:87px;width:90px;height:72px;background:radial-gradient(ellipse at 50% 91%,#7dc6cb 0 32%,transparent 33%),linear-gradient(90deg,transparent 46%,#c8b38a 46% 53%,transparent 53%);opacity:.7}
+.wl-fountain:before{content:"";position:absolute;bottom:10px;width:90px;height:15px;border-radius:50%;background:#a9a28a}
+.wl-fountain:after{content:"";position:absolute;bottom:22px;left:30px;width:30px;height:40px;border-left:2px solid #a7e4e7;border-right:2px solid #a7e4e7;border-radius:50%;opacity:.8}
+.wl-static .wl-world *{animation:none!important}
+[data-living-theme="night"] .wl-tree:before,[data-living-theme="night"] .wl-tree:after{filter:brightness(.50)}
+[data-living-theme="mountain"] .wl-tree:before,[data-living-theme="mountain"] .wl-tree:after{filter:saturate(.7)}
+[data-living-theme="town"] .wl-fence{opacity:.55}
+@keyframes wl-water{to{background-position:145px 0}}
+@keyframes wl-bird-fly{0%,100%{transform:translate3d(-12px,5px,0)}50%{transform:translate3d(24px,-16px,0)}}
+@keyframes wl-butterfly-bob{0%,100%{transform:translateY(1px) rotate(-8deg)}50%{transform:translateY(-13px) rotate(12deg)}}
+@keyframes wl-wing{to{transform:scaleX(.35)}}
+@keyframes wl-firefly{0%,100%{opacity:.20;transform:translate(0,0)}50%{opacity:.92;transform:translate(12px,-16px)}}
+@media(max-width:560px){.wl-controls{font-size:12px}.wl-controls button{min-height:42px;padding:7px 11px}.wl-controls label{flex-basis:100%}.wl-tree{opacity:.8}.wl-world .wl-tree:nth-of-type(n+7){display:none}}
+@media(prefers-reduced-motion:reduce){.wl-world *{animation:none!important;transition:none!important}}

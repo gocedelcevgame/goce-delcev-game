@@ -1,14 +1,17 @@
 {
   "product": "Патот на Слободата — Гоце Делчев",
-  "version": "2.5.4",
-  "base_version": "2.5.3",
-  "date": "2026-11-08",
-  "status": "public playtest release candidate",
+  "version": "2.5.7",
+  "base_version": "2.5.6",
+  "date": "2026-11-09",
+  "status": "Living Historical Worlds source release candidate; not deployed; no commercial clearance",
   "github_repository": "gocedelcevgame/goce-delcev-game",
   "deployment": "not performed",
   "payment": "inactive",
   "tv": "separate experimental package",
-  "source": "verified previous local build",
+  "source": "v2.5.4 GitHub game source; mechanics & QA repair, 2026-11-08",
   "song_file": "assets/audio/pesna-patot-na-slobodata.m4a",
-  "song_sha256": "abed144bce8f6bdb45fbea209a7f6c29498ae143758e871828ae9366bf93a558"
+  "song_sha256": "abed144bce8f6bdb45fbea209a7f6c29498ae143758e871828ae9366bf93a558",
+  "visual_engine": "2.5D parallax with optional decorative gardens, birds, water and historical environments",
+  "ambient_audio": "four original algorithmically synthesized mono MP3 loops; no field recordings; opted-in only",
+  "ambient_source": "scripts/generate_original_ambience.py"
 }

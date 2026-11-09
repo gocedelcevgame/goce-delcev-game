@@ -1,6 +1,12 @@
 // WPA educational games - controlled public playtest cache.
-const CACHE_NAME = 'wpa-goce-playtest-2.5.4';
+const CACHE_NAME = 'wpa-goce-playtest-2.5.7';
 const ASSETS = [
+  "./living-world.js",
+  "./living-world.css",
+  "./assets/ambience/songbirds.mp3",
+  "./assets/ambience/brook.mp3",
+  "./assets/ambience/breeze.mp3",
+  "./assets/ambience/dusk-insects.mp3",
   "./assets/audio/pesna-patot-na-slobodata.m4a",
   "./ai/ai-companions.js",
   "./assets/images/goce-hero.svg",

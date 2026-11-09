@@ -78,6 +78,6 @@ const TEXTS={
     const footer=document.querySelector('.footer');
     if(footer)footer.setAttribute('aria-label','Educational public playtest. Progress is local only.');
   }
-  document.addEventListener('DOMContentLoaded',()=>{ sweep(document.body); translateChrome(); mo.observe(document.body,{childList:true,subtree:true}); makeBtn(); flagBadge(); document.title=t(DOC_TITLE_MK); });
+  document.addEventListener('DOMContentLoaded',()=>{ document.documentElement.lang=lang(); if(lang()==='en'){sweep(document.body); translateChrome(); mo.observe(document.body,{childList:true,subtree:true});} makeBtn(); flagBadge(); document.title=t(DOC_TITLE_MK); });
   window.I18N={lang:lang,t:t,fact:typeof FACT_EN!=='undefined'?(i)=>{ if(lang()==='en'&&FACT_EN[i]) return {title:FACT_EN[i][0],text:FACT_EN[i][1]}; return null; }:null};
 })();

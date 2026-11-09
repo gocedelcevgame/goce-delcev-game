@@ -3,7 +3,7 @@
 // Образовна, семејно безбедна игра. Сите податоци се чуваат локално.
 // ============================================================
 const $ = (id) => document.getElementById(id);
-const VERSION = '2.5.2';
+const VERSION = '2.5.7';
 
 let levels = [];
 let quiz = [];
@@ -44,6 +44,7 @@ const PLAYER_W = 40, PLAYER_H = 56;
 let player = { x: 80, y: GROUND, vy: 0, w: PLAYER_W, h: PLAYER_H, onGround: true, doubleReady: true };
 let keys = {};
 let objects = [];
+let depthDistance = 0;           // decorative parallax only — no physics change
 let lastSpawnX = 0;          // поминат пат од последниот објект (пиксели)
 let lastHazardGap = 999;
 let lastTime = 0;
@@ -194,6 +195,10 @@ function scrollToStage(){
 
 // ---------- Ниво ----------
 function resetLevel(){
+  depthDistance = 0;
+  if(window.WPALiving){ WPALiving.setGameActive(false); WPALiving.setLevel(state.level); }
+  const scene = $("stage");
+  if(scene) ["--depth-far","--depth-mid","--depth-near"].forEach(k=>scene.style.setProperty(k,"0px"));
   state.arriving = false;
   goalX = null;
   $("heroPlayer")?.classList.remove('arrived');
@@ -203,6 +208,11 @@ function resetLevel(){
   objects = []; lastSpawnX = 0; lastHazardGap = 999; invulnUntil = 0;
   power = { shield: 0, slow: 0, magnet: 0 };
   clearObjects();
+  // Visible, reachable introduction to 📜 scroll collecting on every level.
+  // These use the same real collision/score mechanism as procedurally spawned items.
+  const w = $('stage')?.clientWidth || 520;
+  spawn('scroll',{x:Math.min(290,Math.max(175,w-75)),y:GROUND+17,tutorial:true});
+  spawn('star',{x:Math.max(295,Math.min(430,w+70)),y:GROUND+33});
   updatePlayerEl();
   renderUI();
 }
@@ -211,6 +221,7 @@ function startGame(){
   if (state.playing) { togglePause(); return; }
   if (!canPlay(state.level)) { selectLevel(state.level); return; }
   state.playing = true; state.paused = false;
+  if(window.WPALiving) WPALiving.setGameActive(true);
   renderUI();
   scrollToStage();
   showIntroCard();
@@ -268,6 +279,7 @@ function landingDust(){
 function togglePause(){
   if(!state.playing) return;
   state.paused = !state.paused;
+  if(window.WPALiving) WPALiving.setGameActive(!state.paused);
   renderUI();
   toast(state.paused ? "⏸ Пауза" : "▶ Продолжуваме!");
 }
@@ -288,6 +300,7 @@ function completeLevel(){
   if(!state.playing) return;
   {
     state.playing = false;
+    if(window.WPALiving) WPALiving.setGameActive(false);
     state.arriving = false;
     $("heroPlayer").classList.add('arrived');
     state.wisdom += l.reward.wisdom;
@@ -380,17 +393,20 @@ function pickType(l){
   return Math.random() < 0.5 ? "star" : "scroll";
 }
 
-function spawn(type){
+function spawn(type, options = {}){
   const stage = $("stage");
   const el = document.createElement("div");
-  el.className = `obj ${type}`;
+  el.className = `obj ${type}${options.tutorial ? ' first-scroll' : ''}`;
+  if(type === 'scroll'){el.setAttribute('aria-hidden','true');el.title='📜 Свиток / Scroll';}
   let y = GROUND;
-  if(type === "star") y = GROUND + 92 + Math.random()*70;
-  if(type === "scroll") y = GROUND + 45 + Math.random()*45;
+  // Keep many collectibles in a walking-height envelope. Upper ones reward jumping.
+  if(type === "star") y = GROUND + 26 + Math.random()*67;
+  if(type === "scroll") y = GROUND + 12 + Math.random()*57;
   if(type === "meteor") y = GROUND + 190 + Math.random()*90;
   if(type === "hole") y = GROUND - 22;
+  if(Number.isFinite(options.y))y=options.y;
   const [w,h] = SIZES[type];
-  const x = stage.clientWidth + 20;
+  const x = Number.isFinite(options.x) ? options.x : stage.clientWidth + 20;
   el.style.left = x + "px";
   el.style.bottom = y + "px";
   stage.appendChild(el);
@@ -474,6 +490,13 @@ function updateGame(dt){
   // v2.1: брзина во пиксели/секунда (ниво 1 ≈ 140, ниво 37 ≈ 320) — порано до 620 px/s
   const pxPerSec = 140 + (l.speed - 1.34) * 110;
   const scroll = pxPerSec / 60 * speedFactor * dt;
+  // Depth illusion moves only the backdrop. No controls, hitboxes or targets change.
+  if(!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    depthDistance = (depthDistance + scroll) % 5000;
+    stage.style.setProperty('--depth-far', (-((depthDistance * 0.055) % 170)).toFixed(1) + 'px');
+    stage.style.setProperty('--depth-mid', (-((depthDistance * 0.12) % 210)).toFixed(1) + 'px');
+    stage.style.setProperty('--depth-near', (-((depthDistance * 0.20) % 230)).toFixed(1) + 'px');
+  }
 
   if(keys.ArrowLeft || keys.a || keys.A) player.x -= 4.5*dt;
   if(keys.ArrowRight || keys.d || keys.D) player.x += 4.5*dt;
@@ -558,7 +581,7 @@ function renderCompanions(){
 }
 
 // ---------- Свиток и квиз ----------
-function pauseForModal(){ if (state.playing && !state.paused) { state.paused = true; renderUI(); } }
+function pauseForModal(){ if (state.playing && !state.paused) { state.paused = true; if(window.WPALiving) WPALiving.setGameActive(false); renderUI(); } }
 
 function openWisdom(){
   const l = levelData();
@@ -592,7 +615,7 @@ function answerQuiz(i, correct, levelId){
 }
 function closeModal(){
   $("modal").classList.remove("show");
-  if (state.playing && state.paused) { state.paused = false; renderUI(); finishIfComplete(); }
+  if (state.playing && state.paused) { state.paused = false; if(window.WPALiving) WPALiving.setGameActive(true); renderUI(); finishIfComplete(); }
 }
 let toastTimer = null;
 function toast(msg){ $("toast").textContent = msg; $("toast").classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(()=>$("toast").classList.remove("show"), 2400); }
@@ -639,6 +662,7 @@ function songEl(){
 }
 function syncSongBtn(){
   const playing=!!song&&!song.paused&&!song.ended;
+  if(window.WPALiving) WPALiving.setMusicPlaying(playing||audio.on);
   const b=$('songBtn');
   if(b){b.textContent=playing?songT('\u23f8 \u041f\u0430\u0443\u0437\u0438\u0440\u0430\u0458','\u23f8 Pause song'):songT('\u25b6 \u041f\u0443\u0448\u0442\u0438 \u0458\u0430 \u043f\u0435\u0441\u043d\u0430\u0442\u0430','\u25b6 Play song');b.classList.toggle('playing',playing);b.setAttribute('aria-pressed',String(playing));}
   if(song&&song.error){return;}
@@ -666,6 +690,7 @@ function toggleMusic(){
   if (audio.on && song && !song.paused) song.pause();
   $("musicBtn").textContent = audio.on ? "🔊 7/8 ритам вклучен" : "🔇 Музика исклучена";
   if(audio.on) startPulse(); else stopPulse();
+  if(window.WPALiving) WPALiving.setMusicPlaying(audio.on||(song&&!song.paused));
 }
 function startPulse(){
   try{
@@ -772,7 +797,7 @@ document.addEventListener("keydown", e => {
 document.addEventListener("keyup", e => keys[e.key] = false);
 document.addEventListener("visibilitychange", () => {
   if (document.hidden && song && !song.paused) song.pause();
-  if (document.hidden && state.playing && !state.paused) { state.paused = true; renderUI(); }
+  if (document.hidden && state.playing && !state.paused) { state.paused = true; if(window.WPALiving) WPALiving.setGameActive(false); renderUI(); }
 });
 window.addEventListener("blur", () => { keys = {}; });
 

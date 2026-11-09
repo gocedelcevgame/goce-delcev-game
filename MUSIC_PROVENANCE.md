@@ -17,3 +17,6 @@ Suno's September 2026 terms permit certain commercial uses of songs generated as
 Before a monetized or public release, preserve screenshots or export showing: exact song title/ID, creation date, active Pro/Premier plan on that date, permitted download receipt or account page, lyrics and third-party sample provenance, and terms under which tracks were generated/downloaded. Confirm no remixes of third-party outputs.
 
 Release gate: music included in the present owner's test and distribution PREVIEW packages for manual review. Commercial authorization remains UNVERIFIED until this evidence is checked and owner signs off. This archive is not a certificate of legal clearance.
+
+## Commercial evidence gate (2026-11-08)
+Before sale: export source track ID, exact generation and download dates, plan evidence at relevant time, rights/lyric authorship, and permitted video-game synchronization use. Do not infer rights from a public Suno URL.

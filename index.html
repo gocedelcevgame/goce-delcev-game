@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="mk">
+<html lang="mk" data-game="goce">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,8 +9,9 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=2.5.4">
-  <script src="edition.js?v=2.5.4"></script>
+  <link rel="stylesheet" href="style.css?v=2.5.7">
+  <link rel="stylesheet" href="living-world.css?v=2.5.7">
+  <script src="edition.js?v=2.5.7"></script>
 </head>
 <body>
 <div class="app">
@@ -32,7 +33,7 @@
   <section class="hero">
     <div class="kicker">WPA Educational Gaming Universe</div>
     <h2>Гоце Делчев</h2>
-    <p>Трчај и скокај низ 37 нивоа, собирај ѕвезди и свитоци и запознај го животот на Гоце Делчев и неговите соборци — по еден вистински историски факт на секое ниво.</p>
+    <p>Трчај и скокај низ 37 нивоа, најпрво допри го видливиот свиток 📜 на патеката, па собирај ѕвезди и свитоци и запознај го животот на Гоце Делчев и неговите соборци — по еден вистински историски факт на секое ниво.</p>
     <div class="quote">„Јас го разбирам светот единствено како поле за културен натпревар меѓу народите.“ <span class="small">— Гоце Делчев</span></div>
     <div class="controls" style="justify-content:center">
       <button class="btn" id="startBtn" onclick="startGame()">▶ Започни мисија</button>
@@ -42,6 +43,12 @@
       <button class="btn dark" id="musicBtn" onclick="toggleMusic()">🔇 Музика исклучена</button>
       <button class="btn dark" data-ed="shop" onclick="openPremium()">👑 Премиум</button>
     </div>
+    <section class="wl-controls" role="group" aria-label="Природни звуци и анимации">
+      <button type="button" data-nature-toggle aria-pressed="false" onclick="WPALiving.toggleNature()">🔇 Природа: ИСКЛ</button>
+      <button type="button" data-motion-toggle aria-pressed="true" onclick="WPALiving.toggleMotion()">🍃 Анимации: ВКЛ</button>
+      <label for="goceNatureVolume">🔉 Амбиент <input id="goceNatureVolume" data-nature-volume type="range" min="0" max="100" value="38" step="5" oninput="WPALiving.setVolume(this.value)" aria-label="Јачина на природните звуци"></label>
+      <span data-nature-caption aria-live="polite">Славејчиња, жубор и ветер — звуци само по избор.</span>
+    </section>
     <section class="soundtrack-card" id="soundtrack" data-ed="song" aria-labelledby="soundtrack-title">
       <div class="soundtrack-heading"><span class="soundtrack-kicker">ORIGINAL SOUNDTRACK | 3:12</span>
         <h3 id="soundtrack-title">&#9835; Патот на Слобода</h3>
@@ -72,9 +79,15 @@
         <div class="pill">Семејно безбедно</div>
       </div>
 
-      <div id="stage" class="stage" tabindex="0" role="group" aria-label="Сцена на играта. Стрелки лево и десно за движење, Space за скок.">
+      <div id="stage" class="stage" tabindex="0" role="group" aria-label="Сцена на играта. Стрелки лево и десно за движење, Space за скок, допри свиток за да собереш историско знаење.">
         <div class="bg"></div>
         <div class="mountains"></div>
+        <!-- v2.5.7: decorative 2.5D scenery only; never intercepts gameplay input. -->
+        <div class="depth-sun" aria-hidden="true"></div>
+        <div class="depth-haze" aria-hidden="true"></div>
+        <div class="depth-range-far" aria-hidden="true"></div>
+        <div class="depth-range-mid" aria-hidden="true"></div>
+        <div class="depth-settlement" aria-hidden="true"></div>
         <div class="ground"></div>
         <div id="heroPlayer" class="hero-player" aria-label="Гоце"></div>
         <div id="goalGate" class="goal-gate" aria-hidden="true"><span class="goal-name">Цел</span></div>
@@ -139,10 +152,11 @@
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-<script src="ai/ai-companions.js?v=2.5.4"></script>
-<script src="i18n.js?v=2.5.4"></script>
-<script src="game.js?v=2.5.4"></script>
-<div style="text-align:center;padding:12px;font-size:14px"><a href="certificate.html" style="color:#D4AF37">🏅 Сертификат</a> · <a href="teacher.html" style="color:#D4AF37">👨‍🏫 За наставници</a> · <a href="crossover.html" style="color:#D4AF37">🍓 Протокол на времето</a></div><div role="note" style="text-align:center;max-width:920px;margin:12px auto 28px;padding:10px 16px;border:1px solid #9b8240;border-radius:12px;background:#161c2c;color:#efe1b7;font:14px system-ui,sans-serif">WPA · Educational public playtest · No active payments · MK full / EN navigation and facts (pilot) · Локална прогресија / Local progress only · v2.5.4</div>
+<script src="ai/ai-companions.js?v=2.5.7"></script>
+<script src="i18n.js?v=2.5.7"></script>
+<script src="living-world.js?v=2.5.7"></script>
+<script src="game.js?v=2.5.7"></script>
+<div style="text-align:center;padding:12px;font-size:14px"><a href="certificate.html" style="color:#D4AF37">🏅 Сертификат</a> · <a href="teacher.html" style="color:#D4AF37">👨‍🏫 За наставници</a> · <a href="crossover.html" style="color:#D4AF37">🍓 Протокол на времето</a></div><div role="note" style="text-align:center;max-width:920px;margin:12px auto 28px;padding:10px 16px;border:1px solid #9b8240;border-radius:12px;background:#161c2c;color:#efe1b7;font:14px system-ui,sans-serif">WPA · Educational public playtest · No active payments · MK full / EN navigation and facts (pilot) · Локална прогресија / Local progress only · v2.5.7</div>
 <script>
 if ('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost') && window.GAME_EDITION?.pwa!==false) {
   addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(e => console.warn('[WPA PWA]',e)));

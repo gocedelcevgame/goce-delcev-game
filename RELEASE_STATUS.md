@@ -1,18 +1,11 @@
-# Патот на Слободата — Гоце Делчев — v2.5.4 (2026-11-08)
+# WPA Historical Adventures — GOCE v2.5.7 (9 November 2026)
 
-STATUS: **PUBLIC PLAYTEST RELEASE CANDIDATE — NOT CONFIRMED LIVE.**
+**STATUS: SOURCE RELEASE CANDIDATE, NOT LIVE. No commercial approval.**
 
-Source: verified v2.5.3 candidate, with maintenance update for file-version cache stamps and GitHub upload consistency.
-37 game levels remain accessible in test mode, MK/EN interface, soundtrack, progress, certificate, teacher area, PWA.
-No checkout, paid entitlement, ad engine or public platform approval is enabled. No claims of commercial sales.
-
-This ZIP is an entire project to extract into the **repository root**, not a GitHub Release attachment.
-
-### Release gate
-1. Keep a backup of current main and compare the staged branch.
-2. Owner account must complete its own GitHub 2FA login. Connected WPA account has READ but not WRITE permission.
-3. Upload to feature branch using the supplied local Windows script; review GitHub Pull Request before merge.
-4. Validate live Pages URL, touch/mobile, offline PWA and both languages after merge.
-5. Verify Suno commercial provenance before any paid licensing.
-
-External release and monetization are subject to human approval.
+- Confirmed public GitHub baseline on 9 Nov 2026: **v2.5.4**. This new update consolidates intermediate mechanics/scroll fixes and the v2.5.6 2.5D scenery; it does not require those intermediate ZIP files to be installed first.
+- New feature: Living Historical Worlds, geographically themed gardens, fences, flowers, fountains, butterflies, birds and water, with optional synthetic sound ambience.
+- Sound default off. Separate on/off, volume, motion controls; pauses on game exit or tab hidden.
+- Scripted test status: see QA report; no signed mobile build or physical Android/iOS device approval.
+- Preservation: 37 levels, gameplay, soundtrack and existing PWA remain present. User progression lives in existing browser localStorage; new settings use separate keys.
+- Legal: the original Suno track requires contractual/licensing verification; procedural ambience is original synthetic audio, not a genuine field recording. Do not activate payment or commercial distribution until Human Gate.
+- Next: upload to a **new GitHub branch**, run CI and Pages preview, test with actual users, then owner decides merge to main.
